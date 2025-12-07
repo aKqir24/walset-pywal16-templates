@@ -1,18 +1,18 @@
 @define-color accent_color {color3};
 @define-color accent_bg_color @accent_color;
 @define-color accent_fg_color {color15};
-@define-color destructive_color {color11};
-@define-color destructive_bg_color {color13};
-@define-color destructive_fg_color {color11};
-@define-color success_color {color13};
-@define-color success_bg_color {color5};
+@define-color destructive_color {color9};
+@define-color destructive_bg_color {color1};
+@define-color destructive_fg_color {color7};
+@define-color success_color {color2};
+@define-color success_bg_color {color13};
 @define-color success_fg_color @accent_fg_color;
 @define-color warning_color {color14};
 @define-color warning_fg_color @accent_fg_color;
-@define-color warning_bg_color {color6};
+@define-color warning_bg_color {color3};
 @define-color error_color {color11};
 @define-color error_fg_color @accent_fg_color;
-@define-color error_bg_color {color3};
+@define-color error_bg_color {color1};
 @define-color window_bg_color {color0};
 @define-color window_fg_color @accent_fg_color;
 @define-color view_bg_color {color0};
@@ -36,7 +36,7 @@
 @define-color card_bg_color rgba(255, 255, 255, 0.05);
 @define-color card_fg_color @accent_fg_color;
 @define-color card_shade_color rgba(0, 0, 0, 0.36);
-@define-color dialog_bg_color {color8};
+@define-color dialog_bg_color {color0};
 @define-color dialog_fg_color @accent_fg_color;
 @define-color popover_bg_color {color0};
 @define-color popover_fg_color @accent_fg_color;
@@ -63,15 +63,15 @@ windowcontrols {
         background-color: {color7};
         background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png")); }
     windowcontrols button.minimize image {
-      background-color: {color14}; }
+      background-color: {color11}; }
       windowcontrols button.minimize image:hover {
         background-image: -gtk-scaled(url("assets/minimize.png"), url("assets/minimize@2.png")); }
     windowcontrols button.maximize image {
-      background-color: {color13}; }
+      background-color: {color12}; }
       windowcontrols button.maximize image:hover {
         background-image: -gtk-scaled(url("assets/maximize.png"), url("assets/maximize@2.png")); }
     windowcontrols button.close image {
-      background-color: {color11}; }
+      background-color: {color9}; }
       windowcontrols button.close image:hover {
         background-image: -gtk-scaled(url("assets/close.png"), url("assets/close@2.png")); }
 
@@ -676,7 +676,7 @@ button.destructive-action {
 
 
 button.suggested-action {
-  color: @accent_fg_color; }
+  color: {color8}; }
 
   button.suggested-action,
   button.suggested-action:checked {
