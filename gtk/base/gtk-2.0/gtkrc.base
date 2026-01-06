@@ -1,32 +1,13 @@
-#modded Numix gtkrc
-
-gtk-color-scheme = "bg_color:{color0}
-color0:{color0}
-color1:{color1}
-color2:{color2}
-color3:{color3}
-color4:{color4}
-color5:{color5}
-color6:{color6}
-color7:{color7}
-color8:{color8}
-color9:{color9}
-color10:{color10}
-color11:{color11}
-color12:{color12}
-color13:{color13}
-color14:{color14}
-color15:{color15}
-text_color:{color15}
-selected_bg_color:@color2
-selected_fg_color:{color15}
-tooltip_bg_color:{color0}
-tooltip_fg_color:{color15}
-titlebar_bg_color:{color0}
-titlebar_fg_color:{color15}
-menu_bg_color:{color0}
-menu_fg_color:{color15}
-link_color:@color2"
+gtk-color-scheme = "color0:{color0}\ncolor1:{color1}\ncolor2:{color2}\ncolor3:{color3}\n"
+gtk-color-scheme = "color4:{color4}\ncolor5:{color5}\ncolor6:{color6}\ncolor7:{color7}\n"
+gtk-color-scheme = "color8:{color8}\ncolor9:{color9}\ncolor10:{color10}\ncolor11:{color12}\n"
+gtk-color-scheme = "color13:{color13}\ncolor14:{color14}\ncolor15:{color15}"
+gtk-color-scheme = "bg_color:{color0}\ntext_color:{color15}"
+gtk-color-scheme = "selected_bg_color:{color2}\nselected_fg_color:{color15}"
+gtk-color-scheme = "tooltip_bg_color:{color0}\ntooltip_fg_color:{color15}"
+gtk-color-scheme = "titlebar_bg_color:{color0}\ntitlebar_fg_color:{color15}"
+gtk-color-scheme = "menu_bg_color:{color0}\nmenu_fg_color:{color15}"
+gtk-color-scheme = "link_color:{color2}"
 gtk-auto-mnemonics	= 1
 
 # Default Style
