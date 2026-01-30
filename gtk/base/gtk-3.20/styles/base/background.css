@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  -GtkToolButton-icon-spacing: 4;
+  -GtkTextView-error-underline-color: @color1;
+  -GtkScrolledWindow-scrollbar-spacing: 0;
+  -GtkToolItemGroup-expander-size: 11;
+  -GtkWidget-text-handle-width: 20;
+  -GtkWidget-text-handle-height: 24;
+  -GtkDialog-button-spacing: 4;
+  -GtkDialog-action-area-border: 0;
+  outline-color: alpha(currentColor,0.3);
+  outline-style: dashed;
+  outline-offset: -3px;
+  outline-width: 1px;
+  -gtk-outline-radius: 4px;
+  -gtk-secondary-caret-color: @color2; }
+
+.background {
+  color: @color15;
+  background-color: @color0; }
+  .background:backdrop {
+    color: @color7;
+    background-color: @color0;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
