@@ -852,7 +852,7 @@ button.circular {
   min-width: 34px;
   min-height: 34px;
   padding: 0;
-  border-radius: 9999px;; }
+  border-radius: 9999px; }
   row.spin spinbutton > button.image-button.up:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):last-child label, row.spin spinbutton > button.image-button.up:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):last-child:dir(ltr):last-child label, row.spin spinbutton > button.image-button.up:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):last-child:dir(rtl):first-child label,
   row.spin spinbutton > button.image-button.down:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) label,
   row.spin spinbutton > button.image-button.down:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):dir(ltr):last-child label,
@@ -1233,7 +1233,7 @@ colorswatch:drop(active).dark > overlay {
   box-shadow: inset 0 0 0 2px @accent_bg_color; }
 
 colorswatch#add-color-button > overlay {
-  0px 0 0 6px; }
+  border-radius: 0px 0 0 6px; }
 
 colorswatch#add-color-button:only-child > overlay {
   border-radius: 6px; }
@@ -1244,7 +1244,7 @@ colorswatch:disabled {
 colorswatch#editor-color-sample {
   border-radius: 6px; }
   colorswatch#editor-color-sample > overlay {
-    0.5px; }
+  border-radius: 0.5px; }
 
 plane {
   outline: 0 solid transparent;
@@ -1517,7 +1517,7 @@ infobar .close {
   min-width: 18px;
   min-height: 18px;
   padding: 4px;
-  0%; }
+   border-radius: 100%; }
 
 /****************
  * GtkStatusBar *
@@ -1874,7 +1874,7 @@ placessidebar .navigation-sidebar > row {
     margin-top: 3px;
     margin-bottom: 3px;
     padding: 0;
-    0%; }
+    border-radius: 100%; }
   placessidebar .navigation-sidebar > row:selected:active {
     box-shadow: none; }
   placessidebar .navigation-sidebar > row.sidebar-placeholder-row {
@@ -2096,7 +2096,7 @@ windowcontrols {
     box-shadow: none; }
     windowcontrols > button > image {
       background-color: alpha(currentColor,0.1);
-      0%;
+      border-radius: 100%;
       padding: 2px;
       transition: background 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
     windowcontrols > button, windowcontrols > button:hover, windowcontrols > button:active {
@@ -2221,9 +2221,9 @@ levelbar.horizontal.discrete > trough > block {
   min-width: 26px;
   border-radius: 0; }
   levelbar.horizontal.discrete > trough > block:first-child {
-    0px 0 0 99px; }
+     border-radius: 0px 0 0 99px; }
   levelbar.horizontal.discrete > trough > block:last-child {
-    0;
+    border-radius: 0;
     margin-right: 0; }
 
 levelbar.vertical trough > block {
@@ -2238,9 +2238,9 @@ levelbar.vertical.discrete > trough > block {
   min-height: 26px;
   border-radius: 0; }
   levelbar.vertical.discrete > trough > block:first-child {
-    0px 99px 0 0; }
+     border-radius: 0px 99px 0 0; }
   levelbar.vertical.discrete > trough > block:last-child {
-    0;
+    border-radius: 0;
     margin-bottom: 0; }
 
 levelbar > trough {
@@ -3725,7 +3725,7 @@ scale {
   scale > trough > slider {
     background-color: mix(white,@view_bg_color,0.2);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
-    0%;
+    border-radius: 100%;
     min-width: 20px;
     min-height: 20px;
     margin: -8px; }
@@ -3787,7 +3787,7 @@ scale {
     scale.horizontal.marks-after > trough > slider {
       border-bottom-right-radius: 0; }
   scale.horizontal.marks-before.marks-after > trough > slider {
-    0%; }
+     border-radius: 100%; }
   scale.vertical > marks {
     color: alpha(currentColor,0.55); }
     scale.vertical > marks.top {
@@ -4279,7 +4279,7 @@ spinbutton {
         border-radius: 0 6px 6px 0; }
       spinbutton:not(.vertical) > button.image-button.up:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):dir(rtl):first-child,
       spinbutton:not(.vertical) > button.image-button.down:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):dir(rtl):first-child {
-        0px 0 0 6px; }
+         border-radius: 0px 0 0 6px; }
   spinbutton.vertical {
     /* :not here just to bump specificity above that of the list button styling */ }
     spinbutton.vertical > text {
@@ -4292,7 +4292,7 @@ spinbutton {
     spinbutton.vertical > button.image-button.up:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):first-child,
     spinbutton.vertical > button.image-button.down:not(.flat):not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque):first-child {
       border-bottom-width: 1px;
-      0px 6px 0 0; }
+       border-radius: 0px 6px 0 0; }
 
 switch {
   border-radius: 14px;
@@ -4315,7 +4315,7 @@ switch {
   switch > slider {
     min-width: 20px;
     min-height: 20px;
-    0%;
+    border-radius: 100%;
     background-color: mix(white,@view_bg_color,0.2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
     switch > slider:disabled {
@@ -4531,7 +4531,7 @@ cursor-handle {
   cursor-handle > contents {
     min-width: 20px;
     min-height: 20px;
-    0%;
+    border-radius: 100%;
     background-color: @accent_bg_color; }
   cursor-handle.top > contents {
     border-top-right-radius: 0; }
@@ -4594,7 +4594,7 @@ searchbar > revealer > box {
     min-width: 18px;
     min-height: 18px;
     padding: 4px;
-    0%; }
+    border-radius: 100%; }
     searchbar > revealer > box .close:dir(ltr) {
       margin-left: 10px;
       margin-right: 4px; }
@@ -5043,7 +5043,7 @@ statusbar {
   -gtk-icon-shadow: 0px 1px 2px @borders,
                     1px 0px 0px alpha(@borders, 0.25),
                     -1px 0px 0px alpha(@borders, 0.25),
-                    0px 2px 0px alpha(@borders, 0.5);
+                     0px 2px 0px alpha(@borders, 0.5);
 }
 
 .nautilus-canvas-item.dim-label {
@@ -5224,7 +5224,7 @@ entry.search > * {
   -gtk-icon-shadow: 0px 1px 2px @borders,
                     1px 0px 0px alpha(@borders, 0.25),
                     -1px 0px 0px alpha(@borders, 0.25),
-                    0px 2px 0px alpha(@borders, 0.5);
+                     0px 2px 0px alpha(@borders, 0.5);
 }
 
 .search-information {
