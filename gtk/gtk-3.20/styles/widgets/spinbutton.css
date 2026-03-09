@@ -1,3 +1,66 @@
+.linked:not(.vertical) > spinbutton:focus:not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:focus:not(.vertical) + button, .linked:not(.vertical) > spinbutton:focus:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:focus:not(.vertical) + entry, .linked:not(.vertical) > entry:focus + button, .linked:not(.vertical) > entry:focus + combobox > box > button.combo, .linked:not(.vertical) > entry:focus + spinbutton:not(.vertical), .linked:not(.vertical) > entry:focus + entry {
+  border-left-color: @color; }
+
+.linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + button, .linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:focus.error:not(.vertical) + entry, .linked:not(.vertical) > entry:focus.error + button, .linked:not(.vertical) > entry:focus.error + combobox > box > button.combo, .linked:not(.vertical) > entry:focus.error + spinbutton:not(.vertical), .linked:not(.vertical) > entry:focus.error + entry {
+  border-left-color: #200404; }
+
+.linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical), .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + entry, .linked:not(.vertical) > entry:drop(active) + button, .linked:not(.vertical) > entry:drop(active) + combobox > box > button.combo, .linked:not(.vertical) > entry:drop(active) + spinbutton:not(.vertical), .linked:not(.vertical) > entry:drop(active) + entry {
+  border-left-color: #19a187; }
+
+.linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), .linked.vertical > entry:not(:disabled) + entry:not(:disabled), .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical) {
+  border-top-color: #21242c; }
+  .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled):backdrop, .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):backdrop:not(.vertical), .linked.vertical > entry:not(:disabled) + entry:not(:disabled):backdrop, .linked.vertical > entry:not(:disabled) + spinbutton:not(:disabled):backdrop:not(.vertical) {
+    border-top-color: @color0; }
+
+.linked.vertical > spinbutton:disabled:not(.vertical) + spinbutton:disabled:not(.vertical), .linked.vertical > spinbutton:disabled:not(.vertical) + entry:disabled, .linked.vertical > entry:disabled + spinbutton:disabled:not(.vertical), .linked.vertical > entry:disabled + entry:disabled {
+  border-top-color: #21242c; }
+
+.linked.vertical > spinbutton:not(.vertical) + spinbutton:focus:not(:only-child):not(.vertical),
+.linked.vertical > spinbutton:not(.vertical) + entry:focus:not(:only-child), .linked.vertical > entry + spinbutton:focus:not(:only-child):not(.vertical),
+.linked.vertical > entry + entry:focus:not(:only-child) {
+  border-top-color: #540000; }
+
+.linked.vertical > spinbutton:not(.vertical) + spinbutton:focus.error:not(:only-child):not(.vertical),
+.linked.vertical > spinbutton:not(.vertical) + entry:focus.error:not(:only-child), .linked.vertical > entry + spinbutton:focus.error:not(:only-child):not(.vertical),
+.linked.vertical > entry + entry:focus.error:not(:only-child) {
+  border-top-color: #200404; }
+
+.linked.vertical > spinbutton:not(.vertical) + spinbutton:drop(active):not(:only-child):not(.vertical),
+.linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
+.linked.vertical > entry + entry:drop(active):not(:only-child) {
+  border-top-color: #19a187; }
+
+.linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
+.linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + entry,
+.linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + button,
+.linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry:focus:not(:only-child) + spinbutton:not(.vertical),
+.linked.vertical > entry:focus:not(:only-child) + entry,
+.linked.vertical > entry:focus:not(:only-child) + button,
+.linked.vertical > entry:focus:not(:only-child) + combobox > box > button.combo {
+  border-top-color: #540000; }
+
+.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
+.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + entry,
+.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + button,
+.linked.vertical > spinbutton:focus.error:not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry:focus.error:not(:only-child) + spinbutton:not(.vertical),
+.linked.vertical > entry:focus.error:not(:only-child) + entry,
+.linked.vertical > entry:focus.error:not(:only-child) + button,
+.linked.vertical > entry:focus.error:not(:only-child) + combobox > box > button.combo {
+  border-top-color: #200404; }
+
+.linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + spinbutton:not(.vertical),
+.linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + entry,
+.linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + button,
+.linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + combobox > box > button.combo, .linked.vertical > entry:drop(active):not(:only-child) + spinbutton:not(.vertical),
+.linked.vertical > entry:drop(active):not(:only-child) + entry,
+.linked.vertical > entry:drop(active):not(:only-child) + button,
+.linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
+  border-top-color: #19a187; }
+
+spinbutton.error:not(.vertical),
+entry.error {
+  color: @color1; }
+
 /****************
  * Text Entries *
  ****************/
@@ -889,52 +952,6 @@ stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attenti
         background-image: image(#1a1d23);
         box-shadow: none; }
 
-.linked:not(.vertical) > combobox > box > button.combo, filechooser .path-bar.linked > button, .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .linked > button, toolbar.inline-toolbar toolbutton > button.flat {
-  border-right-style: none;
-  border-radius: 0;
-  -gtk-outline-radius: 0; }
-
-.linked:not(.vertical) > combobox:first-child > box > button.combo, combobox.linked button:nth-child(2):dir(rtl), filechooser .path-bar.linked > button:dir(rtl):last-child, filechooser .path-bar.linked > button:dir(ltr):first-child, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked > button:first-child, toolbar.inline-toolbar toolbutton:first-child > button.flat {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  -gtk-outline-top-left-radius: 6px;
-  -gtk-outline-bottom-left-radius: 6px; }
-
-.linked:not(.vertical) > combobox:last-child > box > button.combo, combobox.linked button:nth-child(2):dir(ltr), filechooser .path-bar.linked > button:dir(rtl):first-child, filechooser .path-bar.linked > button:dir(ltr):last-child, .linked:not(.vertical) > spinbutton:last-child:not(.vertical), .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat {
-  border-right-style: solid;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  -gtk-outline-top-right-radius: 6px;
-  -gtk-outline-bottom-right-radius: 6px; }
-
-.linked:not(.vertical) > combobox:only-child > box > button.combo, filechooser .path-bar.linked > button:only-child, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked > button:only-child, toolbar.inline-toolbar toolbutton:only-child > button.flat {
-  border-style: solid;
-  border-radius: 6px;
-  -gtk-outline-radius: 6px; }
-
-.linked.vertical > combobox > box > button.combo, .linked.vertical > spinbutton:not(.vertical), .linked.vertical > entry, .linked.vertical > button {
-  border-style: solid solid none solid;
-  border-radius: 0;
-  -gtk-outline-radius: 0; }
-
-.linked.vertical > combobox:first-child > box > button.combo, .linked.vertical > spinbutton:first-child:not(.vertical), .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  -gtk-outline-top-left-radius: 6px;
-  -gtk-outline-top-right-radius: 6px; }
-
-.linked.vertical > combobox:last-child > box > button.combo, .linked.vertical > spinbutton:last-child:not(.vertical), .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
-  border-bottom-style: solid;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  -gtk-outline-bottom-left-radius: 6px;
-  -gtk-outline-bottom-right-radius: 6px; }
-
-.linked.vertical > combobox:only-child > box > button.combo, .linked.vertical > spinbutton:only-child:not(.vertical), .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
-  border-style: solid;
-  border-radius: 6px;
-  -gtk-outline-radius: 6px; }
-
 .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, .scale-popup button:hover, calendar.button, button:link:hover, button:link:active, button:link:checked,
 button:visited:hover,
 button:visited:active,
@@ -990,75 +1007,6 @@ list row button.image-button:not(.flat) {
     border-color: @color2;
     background-image: linear-gradient(to right, @color2, @color10);
     box-shadow: 0 2px 4px rgba(236, 1, 1, 0.25); }
-
-/*********
- * Links *
- *********/
-button:link > label,
-button:visited > label, button:link,
-button:visited,
-*:link {
-  color: #fe5555; }
-  button:link > label:visited,
-  button:visited > label:visited,
-  button:visited,
-  *:link:visited {
-    color: #fe2222; }
-    *:selected button:link > label:visited,
-    *:selected button:visited > label:visited,
-    *:selected button:visited, *:selected *:link:visited {
-      color: #ffa7a7; }
-  button:link > label:hover,
-  button:visited > label:hover, button:hover:link,
-  button:hover:visited,
-  *:link:hover {
-    color: #fe8888; }
-    *:selected button:link > label:hover,
-    *:selected button:visited > label:hover, *:selected button:hover:link,
-    *:selected button:hover:visited, *:selected *:link:hover {
-      color: #fff3f3; }
-  button:link > label:active,
-  button:visited > label:active, button:active:link,
-  button:active:visited,
-  *:link:active {
-    color: #fe5555; }
-    *:selected button:link > label:active,
-    *:selected button:visited > label:active, *:selected button:active:link,
-    *:selected button:active:visited, *:selected *:link:active {
-      color: #ffdddd; }
-  button:link > label:disabled,
-  button:visited > label:disabled, button:disabled:link,
-  button:disabled:visited,
-  *:link:disabled,
-  *:link:disabled:backdrop {
-    color: rgba(170, 170, 170, 0.8); }
-  button:link > label:backdrop,
-  button:visited > label:backdrop, button:backdrop:link,
-  button:backdrop:visited,
-  *:link:backdrop:backdrop:hover,
-  *:link:backdrop:backdrop:hover:selected,
-  *:link:backdrop {
-    color: rgba(254, 85, 85, 0.9); }
-  .selection-mode .titlebar:not(headerbar) .subtitle:link, .selection-mode.titlebar:not(headerbar) .subtitle:link, .selection-mode headerbar .subtitle:link,
-  headerbar.selection-mode .subtitle:link, button:link > label:selected,
-  button:visited > label:selected, button:selected:link,
-  button:selected:visited, *:selected button:link > label,
-  *:selected button:visited > label, *:selected button:link,
-  *:selected button:visited,
-  *:link:selected, *:selected *:link {
-    color: #ffdddd; }
-
-button:link,
-button:visited {
-  text-shadow: none; }
-  button:link:hover, button:link:active, button:link:checked,
-  button:visited:hover,
-  button:visited:active,
-  button:visited:checked {
-    text-shadow: none; }
-  button:link > label,
-  button:visited > label {
-    text-decoration-line: underline; }
 
 /*****************
  * GtkSpinButton *
