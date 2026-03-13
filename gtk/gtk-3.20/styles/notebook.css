@@ -178,6 +178,6 @@ notebook > header {
     padding-top: 4px; }
 
 notebook > stack:not(:only-child) {
-  background-color: @color1; }
+  background-color: @color0; }
   notebook > stack:not(:only-child):backdrop {
     background-color: @color8; }
