@@ -57,10 +57,6 @@
 .linked.vertical > entry:drop(active):not(:only-child) + combobox > box > button.combo {
   border-top-color: #19a187; }
 
-spinbutton.error:not(.vertical),
-entry.error {
-  color: @color1; }
-
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
   background-color: @color1;
   transition-property: color, background; }
@@ -159,43 +155,6 @@ button:visited {
   .stack-switcher > button.needs-attention:checked > image {
     animation: none;
     background-image: none; }
-
-button.font separator,
-button.file separator {
-  background-color: transparent; }
-
-button.font > box > box > label {
-  font-weight: bold; }
-
-.primary-toolbar button {
-  -gtk-icon-shadow: none; }
-
-button.circular {
-  border-radius: 9999px;
-  -gtk-outline-radius: 9999px;
-  padding: 2px;
-  /* circles instead of ellipses */
-  background-origin: padding-box, border-box;
-  background-clip: padding-box, border-box; }
-
-  button.circular label {
-    padding: 0; }
-
-  button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
-    color: @color15;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-color: @color0;
-    background-image: image(#323643), linear-gradient(to top, black 25%, @color0 50%);
-    box-shadow: none;
-    border-color: transparent; }
-
-  button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
-    color: @color15;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-color: @color0;
-    background-image: image(#414657), linear-gradient(to top, black 25%, @color0 50%);
-    box-shadow: none;
-    border-color: transparent; }
 
 stacksidebar row.needs-attention > label, .stack-switcher > button.needs-attention > label,
 .stack-switcher > button.needs-attention > image {

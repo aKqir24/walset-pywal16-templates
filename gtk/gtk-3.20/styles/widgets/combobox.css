@@ -473,28 +473,6 @@ modelbutton.flat arrow {
   modelbutton.flat arrow.right {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
-button.color {
-  padding: 4px; }
-  button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
-    border-radius: 0; }
-
-/* list buttons */
-/* tone down as per new designs, see issue #1473, #1748 */
-list row button.image-button:not(.flat) {
-  border: 1px solid rgba(19, 21, 26, 0.5); }
-  list row button.image-button:not(.flat):hover {
-    color: @color15;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-color: @color0;
-    background-image: image(#414657);
-    box-shadow: none; }
-  list row button.image-button:not(.flat):active, list row button.image-button:not(.flat):checked {
-    color: @color15;
-    outline-color: rgba(238, 238, 236, 0.3);
-    border-color: @color2;
-    background-image: linear-gradient(to right, @color2, @color10);
-    box-shadow: 0 2px 4px rgba(236, 1, 1, 0.25); }
-
 /**************
  * ComboBoxes *
  **************/

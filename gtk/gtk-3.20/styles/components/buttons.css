@@ -1,151 +1,45 @@
-/****************
- * Text Entries *
- ****************/
-spinbutton:not(.vertical),
-entry {
-  min-height: 28px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border: 1px solid;
-  border-radius: 6px;
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: @color15;
-  border-color: @color0;
-  background-color: @color1;
-  box-shadow: inset 0 0 0 1px rgba(236, 1, 1, 0); }
-  spinbutton:not(.vertical) image.left,
-  entry image.left {
-    margin-right: 6px; }
-  spinbutton:not(.vertical) image.right,
-  entry image.right {
-    margin-left: 6px; }
-  spinbutton.flat:not(.vertical),
-  entry.flat:focus,
-  entry.flat:backdrop,
-  entry.flat:disabled,
-  entry.flat {
-    min-height: 0;
-    padding: 2px;
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 0; }
-  spinbutton:focus:not(.vertical),
-  entry:focus {
-    box-shadow: inset 0 0 0 1px @color2;
-    border-color: #540000; }
-  spinbutton:disabled:not(.vertical),
-  entry:disabled {
-    color: @color7;
-    border-color: @color0;
-    background-color: @color0;
-    box-shadow: none; }
-  spinbutton:backdrop:not(.vertical),
-  entry:backdrop {
-    color: #d4d5d7;
-    border-color: @color0;
-    background-color: @color8;
-    box-shadow: none;
-    transition: 200ms ease-out; }
-  spinbutton:backdrop:disabled:not(.vertical),
-  entry:backdrop:disabled {
-    color: @color7;
-    border-color: @color0;
-    background-color: @color0;
-    box-shadow: none; }
-  spinbutton.error:not(.vertical),
-  entry.error {
-    color: @color1;
-    border-color: #200404; }
-    spinbutton.error:focus:not(.vertical),
-    entry.error:focus {
-      box-shadow: inset 0 0 0 1px @color1;
-      border-color: #200404; }
-    spinbutton.error:not(.vertical) selection,
-    entry.error selection {
-      background-color: @color1; }
-  spinbutton.warning:not(.vertical),
-  entry.warning {
-    color: @color3;
-    border-color: @color8; }
-    spinbutton.warning:focus:not(.vertical),
-    entry.warning:focus {
-      box-shadow: inset 0 0 0 1px @color3;
-      border-color: @color8; }
-    spinbutton.warning:not(.vertical) selection,
-    entry.warning selection {
-      background-color: @color3; }
-  spinbutton:not(.vertical) image,
-  entry image {
-    color: #c6c7c7; }
-    spinbutton:not(.vertical) image:hover,
-    entry image:hover {
-      color: @color15; }
-    spinbutton:not(.vertical) image:active,
-    entry image:active {
-      color: @color2; }
-    spinbutton:not(.vertical) image:backdrop,
-    entry image:backdrop {
-      color: @color7; }
-  spinbutton:drop(active):not(.vertical),
-  entry:drop(active):focus,
-  entry:drop(active) {
-    border-color: #19a187;
-    box-shadow: inset 0 0 0 1px #19a187; }
-  .osd spinbutton:not(.vertical), .osd entry {
-    color: @color15;
-    border-color: black;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-clip: padding-box;
-    box-shadow: none;
-    text-shadow: 0 1px black;
-    -gtk-icon-shadow: 0 1px black; }
-    .osd spinbutton:focus:not(.vertical), .osd entry:focus {
-      color: @color15;
-      border-color: @color2;
-      background-color: rgba(0, 0, 0, 0.5);
-      background-clip: padding-box;
-      box-shadow: inset 0 0 0 1px @color2;
-      text-shadow: 0 1px black;
-      -gtk-icon-shadow: 0 1px black; }
-    .osd spinbutton:backdrop:not(.vertical), .osd entry:backdrop {
-      color: @color15;
-      border-color: black;
-      background-color: rgba(0, 0, 0, 0.5);
-      background-clip: padding-box;
-      box-shadow: none;
-      text-shadow: none;
-      -gtk-icon-shadow: none; }
-    .osd spinbutton:disabled:not(.vertical), .osd entry:disabled {
-      color: #97999f;
-      border-color: black;
-      background-color: rgba(68, 72, 83, 0.5);
-      background-clip: padding-box;
-      box-shadow: none;
-      text-shadow: none;
-      -gtk-icon-shadow: none; }
-
-spinbutton:not(.vertical) progress,
-entry progress {
-  margin: 2px -6px;
-  background-color: transparent;
-  background-image: none;
-  border-radius: 0;
-  border-width: 0 0 2px;
-  border-color: @color2;
-  border-style: solid;
-  box-shadow: none; }
-  spinbutton:not(.vertical) progress:backdrop,
-  entry progress:backdrop {
-    background-color: transparent; }
-
-/***********
- * Buttons *
- ***********/
 @keyframes needs_attention {
   from {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(#fe3b3b), to(transparent)); }
   to {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(@color2), to(transparent)); } }
+
+button.font separator,
+button.file separator {
+  background-color: transparent; }
+
+button.font > box > box > label {
+  font-weight: bold; }
+
+.primary-toolbar button {
+  -gtk-icon-shadow: none; }
+
+button.circular {
+  border-radius: 9999px;
+  -gtk-outline-radius: 9999px;
+  padding: 2px;
+  /* circles instead of ellipses */
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box; }
+
+  button.circular label {
+    padding: 0; }
+
+  button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#323643), linear-gradient(to top, black 25%, @color0 50%);
+    box-shadow: none;
+    border-color: transparent; }
+
+  button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#414657), linear-gradient(to top, black 25%, @color0 50%);
+    box-shadow: none;
+    border-color: transparent; }
 
 button.titlebutton, notebook > header > tabs > arrow,
 button {
@@ -279,6 +173,10 @@ row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(di
   row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled):backdrop, row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
     color: @color7; }
 
+button.color {
+    padding: 4px; }
+    button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
+        border-radius: 0; }
 
 button.osd {
   min-width: 26px;
