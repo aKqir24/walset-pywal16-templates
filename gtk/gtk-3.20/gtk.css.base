@@ -23,13 +23,16 @@
 @import url("styles/components/buttons-linked.css");
 @import url("styles/components/buttons-destructive.css");
 @import url("styles/components/buttons-suggested.css");
+@import url("styles/widgets/spinbutton.css");
 @import url("styles/components/links.css");
-@import url("styles/overlays/osd.css");
 @import url("styles/overlays/spinner.css");
 @import url("styles/widgets/combobox.css");
 @import url("styles/widgets/entries.css");
 @import url("styles/widgets/labels.css");
-@import url("styles/widgets/spinbutton.css");
-@import url("styles/widgets/labels.css");
+@import url("styles/overlays/osd.css");
 
+@import url("styles/notebook.css");
+@import url("styles/scrollbar.css");
+
+@import url("toggles.css");
 @import url("toolbars.css");
