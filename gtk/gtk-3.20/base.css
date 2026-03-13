@@ -1272,7 +1272,7 @@ levelbar trough {
   border-radius: 3px;
   color: @color15;
   border-color: @color0;
-  background-color: @color1;
+  background-color: @color0;
   box-shadow: inset 0 0 0 1px rgba(236, 1, 1, 0); }
   levelbar trough:backdrop {
     color: #d4d5d7;
@@ -1416,7 +1416,7 @@ scrolledwindow overshoot.right {
 scrolledwindow junction {
   border-color: transparent;
   border-image: linear-gradient(to bottom, @color0 1px, transparent 1px) 0 0 0 1/0 1px stretch;
-  background-color: @color1; }
+  background-color: @color0; }
   scrolledwindow junction:dir(rtl) {
     border-image-slice: 0 1 0 0; }
   scrolledwindow junction:backdrop {
@@ -1434,7 +1434,7 @@ separator {
  *********/
 list {
   color: @color15;
-  background-color: @color1;
+  background-color: @color0;
   border-color: @color0; }
   list:backdrop {
     color: #d4d5d7;
@@ -2096,7 +2096,7 @@ cursor-handle {
   padding-left: 6px;
   padding-right: 6px;
   color: @color15;
-  background-color: @color1;
+  background-color: @color0;
   border: 1px solid;
   border-color: @color0;
   border-radius: 5px;
@@ -2531,7 +2531,7 @@ list.content list.nested > row:not(:active):hover.activatable:not(:selected) {
   background-color: mix(@color15, @color1, 0.95); }
 
 list.content > row:not(.expander):not(:active):not(:hover):not(:selected), list.content > row:not(.expander):not(:active):hover:not(.activatable):not(:selected), list.content > row.expander row.header:not(:active):not(:hover):not(:selected), list.content > row.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
-  background-color: @color1; }
+  background-color: @color0; }
 
 list.content > row:not(.expander):not(:active):hover.activatable:not(:selected), list.content > row.expander row.header:not(:active):hover.activatable:not(:selected) {
   background-color: mix(@color15, @color1, 0.95); }
@@ -3410,7 +3410,7 @@ infobar.warning.action:hover button.flat {
     color: @color15; }
 
 infobar.error:backdrop > revealer > box, infobar.error > revealer > box, infobar.error.action:hover:backdrop > revealer > box, infobar.error.action:hover > revealer > box {
-  background-color: @color1; }
+  background-color: @color0; }
   infobar.error:backdrop > revealer > box button,
   infobar.error:backdrop > revealer > box button.flat, infobar.error > revealer > box button,
   infobar.error > revealer > box button.flat, infobar.error.action:hover:backdrop > revealer > box button,
@@ -3872,7 +3872,7 @@ XfdesktopIconView.rubberband {
   box-shadow: inset 0 0 0 1px @color2; }
 
 .budgie-panel {
-  background-color: @color1;
+  background-color: @color0;
   color: @color15;
   font-weight: normal; }
   .budgie-panel image {
@@ -4139,7 +4139,7 @@ XfdesktopIconView.rubberband {
 
 .budgie-menu.background {
   padding: 0;
-  background-color: @color1; }
+  background-color: @color0; }
 
 .budgie-menu scrollbar,
 .budgie-menu entry.search {
@@ -4241,7 +4241,7 @@ frame.raven-frame > border {
     border-style: solid none;
     border-width: 1px;
     border-color: @color0;
-    background-color: @color1; }
+    background-color: @color0; }
   .raven scrolledwindow.raven-background {
     border-bottom-style: none; }
   .raven .powerstrip button {
@@ -4325,7 +4325,7 @@ calendar.raven-calendar {
   color: @color9; }
 
 .budgie-run-dialog {
-  background-color: @color1;
+  background-color: @color0;
   border-style: none; }
   .budgie-run-dialog entry.search {
     font-size: 120%;
