@@ -401,3 +401,60 @@ treeview.view check:selected:focus, treeview.view check:selected,
 treeview.view radio:selected:focus,
 treeview.view radio:selected {
   color: @color15; }
+
+check, menu menuitem check, menu menuitem:hover check,
+radio, menu menuitem radio, menu menuitem:hover radio {
+  color: @color15;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: @color0;
+  background-image: image(#323643);
+  box-shadow: none; }
+  check:hover, menu menuitem check:hover, menu menuitem:hover check:hover,
+  radio:hover, menu menuitem radio:hover, menu menuitem:hover radio:hover {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#414657);
+    box-shadow: none; }
+  check:disabled, check:disabled:checked, check:disabled:indeterminate, check:disabled:backdrop, check:disabled:backdrop:checked, check:disabled:backdrop:indeterminate, menu menuitem check:disabled, menu menuitem check:disabled:checked, menu menuitem check:disabled:indeterminate, menu menuitem check:disabled:backdrop, menu menuitem check:disabled:backdrop:checked, menu menuitem check:disabled:backdrop:indeterminate, menu menuitem:hover check:disabled, menu menuitem:hover check:disabled:checked, menu menuitem:hover check:disabled:indeterminate, menu menuitem:hover check:disabled:backdrop, menu menuitem:hover check:disabled:backdrop:checked, menu menuitem:hover check:disabled:backdrop:indeterminate,
+  radio:disabled,
+  radio:disabled:checked,
+  radio:disabled:indeterminate,
+  radio:disabled:backdrop,
+  radio:disabled:backdrop:checked,
+  radio:disabled:backdrop:indeterminate, menu menuitem radio:disabled, menu menuitem radio:disabled:checked, menu menuitem radio:disabled:indeterminate, menu menuitem radio:disabled:backdrop, menu menuitem radio:disabled:backdrop:checked, menu menuitem radio:disabled:backdrop:indeterminate, menu menuitem:hover radio:disabled, menu menuitem:hover radio:disabled:checked, menu menuitem:hover radio:disabled:indeterminate, menu menuitem:hover radio:disabled:backdrop, menu menuitem:hover radio:disabled:backdrop:checked, menu menuitem:hover radio:disabled:backdrop:indeterminate {
+    border-color: @color0;
+    background-image: image(@color0);
+    color: @color15; }
+
+check:checked, check:indeterminate, menu menuitem check:checked, menu menuitem check:indeterminate,
+radio:checked,
+radio:indeterminate, menu menuitem radio:checked, menu menuitem radio:indeterminate {
+  background-image: image(@color2);
+  border-color: @color2;
+  color: @color15; }
+  check:checked:active, check:indeterminate:active, menu menuitem check:checked:active, menu menuitem check:indeterminate:active,
+  radio:checked:active,
+  radio:indeterminate:active, menu menuitem radio:checked:active, menu menuitem radio:indeterminate:active {
+    box-shadow: none; }
+  check:checked:backdrop, check:indeterminate:backdrop, menu menuitem check:checked:backdrop, menu menuitem check:indeterminate:backdrop,
+  radio:checked:backdrop,
+  radio:indeterminate:backdrop, menu menuitem radio:checked:backdrop, menu menuitem radio:indeterminate:backdrop {
+    background-image: image(@color2);
+    color: @color15; }
+
+switch slider,
+scale slider {
+  color: @color15;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: black;
+  background-image: image(#323643);
+  box-shadow: none; }
+  switch slider:active, switch slider:hover,
+  scale slider:active,
+  scale slider:hover {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color2;
+    background-image: image(#0f1014);
+    box-shadow: none; }

@@ -1,0 +1,243 @@
+infobar, infobar.info, infobar.question, infobar.warning, infobar.error {
+  border-style: none;
+  text-shadow: none; }
+  infobar:backdrop > revealer > box label, infobar:backdrop > revealer > box, infobar > revealer > box label, infobar > revealer > box, infobar.info:backdrop > revealer > box label, infobar.info:backdrop > revealer > box, infobar.info > revealer > box label, infobar.info > revealer > box, infobar.question:backdrop > revealer > box label, infobar.question:backdrop > revealer > box, infobar.question > revealer > box label, infobar.question > revealer > box, infobar.warning:backdrop > revealer > box label, infobar.warning:backdrop > revealer > box, infobar.warning > revealer > box label, infobar.warning > revealer > box, infobar.error:backdrop > revealer > box label, infobar.error:backdrop > revealer > box, infobar.error > revealer > box label, infobar.error > revealer > box {
+    color: @color15; }
+  infobar:backdrop, infobar.info:backdrop, infobar.question:backdrop, infobar.warning:backdrop, infobar.error:backdrop {
+    text-shadow: none; }
+  infobar selection, infobar.info selection, infobar.question selection, infobar.warning selection, infobar.error selection {
+    background-color: #0d0e11; }
+  infobar *:link, infobar.info *:link, infobar.question *:link, infobar.warning *:link, infobar.error *:link {
+    color: #fe5555; }
+
+infobar.info:backdrop > revealer > box, infobar.info > revealer > box, infobar.info.action:hover:backdrop > revealer > box, infobar.info.action:hover > revealer > box {
+  background-color: @color2; }
+
+infobar.info button,
+infobar.info button.flat, infobar.info.action:hover button,
+infobar.info.action:hover button.flat {
+  color: @color15;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #fe1313;
+  background-image: image(#fe2222);
+  box-shadow: none; }
+  infobar.info button:hover,
+  infobar.info button.flat:hover, infobar.info.action:hover button:hover,
+  infobar.info.action:hover button.flat:hover {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: @color2;
+    background-image: image(#fe3636);
+    box-shadow: none; }
+  infobar.info button:active, infobar.info button:checked,
+  infobar.info button.flat:active,
+  infobar.info button.flat:checked, infobar.info.action:hover button:active, infobar.info.action:hover button:checked,
+  infobar.info.action:hover button.flat:active,
+  infobar.info.action:hover button.flat:checked {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: #a50101;
+    background-image: linear-gradient(to right, #af0101, #9b0101);
+    box-shadow: 0 2px 4px rgba(165, 1, 1, 0.25); }
+  infobar.info button:disabled,
+  infobar.info button.flat:disabled, infobar.info.action:hover button:disabled,
+  infobar.info.action:hover button.flat:disabled {
+    color: #e78384;
+    border-color: @color2;
+    background-image: image(#ce0709);
+    box-shadow: none; }
+  infobar.info button:backdrop,
+  infobar.info button.flat:backdrop, infobar.info.action:hover button:backdrop,
+  infobar.info.action:hover button.flat:backdrop {
+    color: #fbcccc;
+    border-color: @color2;
+    background-image: image(@color2);
+    box-shadow: none;
+    border-color: @color2; }
+    infobar.info button:backdrop:disabled,
+    infobar.info button.flat:backdrop:disabled, infobar.info.action:hover button:backdrop:disabled,
+    infobar.info.action:hover button.flat:backdrop:disabled {
+      color: #df5e5f;
+      border-color: @color2;
+      background-image: image(#ce0709);
+      box-shadow: none;
+      border-color: @color2; }
+  infobar.info button:backdrop label, infobar.info button:backdrop, infobar.info button label, infobar.info button,
+  infobar.info button.flat:backdrop label,
+  infobar.info button.flat:backdrop,
+  infobar.info button.flat label,
+  infobar.info button.flat, infobar.info.action:hover button:backdrop label, infobar.info.action:hover button:backdrop, infobar.info.action:hover button label, infobar.info.action:hover button,
+  infobar.info.action:hover button.flat:backdrop label,
+  infobar.info.action:hover button.flat:backdrop,
+  infobar.info.action:hover button.flat label,
+  infobar.info.action:hover button.flat {
+    color: @color15; }
+
+infobar.question:backdrop > revealer > box, infobar.question > revealer > box, infobar.warning:backdrop > revealer > box, infobar.warning > revealer > box, infobar.question.action:hover:backdrop > revealer > box, infobar.question.action:hover > revealer > box, infobar.warning.action:hover:backdrop > revealer > box, infobar.warning.action:hover > revealer > box {
+  background-color: @color3; }
+
+infobar.question button,
+infobar.question button.flat, infobar.warning button,
+infobar.warning button.flat, infobar.question.action:hover button,
+infobar.question.action:hover button.flat, infobar.warning.action:hover button,
+infobar.warning.action:hover button.flat {
+  color: @color15;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #ff8f22;
+  background-image: image(#ff9731);
+  box-shadow: none; }
+  infobar.question button:hover,
+  infobar.question button.flat:hover, infobar.warning button:hover,
+  infobar.warning button.flat:hover, infobar.question.action:hover button:hover,
+  infobar.question.action:hover button.flat:hover, infobar.warning.action:hover button:hover,
+  infobar.warning.action:hover button.flat:hover {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: #ca6400;
+    background-image: image(#ffa145);
+    box-shadow: none; }
+  infobar.question button:active, infobar.question button:checked,
+  infobar.question button.flat:active,
+  infobar.question button.flat:checked, infobar.warning button:active, infobar.warning button:checked,
+  infobar.warning button.flat:active,
+  infobar.warning button.flat:checked, infobar.question.action:hover button:active, infobar.question.action:hover button:checked,
+  infobar.question.action:hover button.flat:active,
+  infobar.question.action:hover button.flat:checked, infobar.warning.action:hover button:active, infobar.warning.action:hover button:checked,
+  infobar.warning.action:hover button.flat:active,
+  infobar.warning.action:hover button.flat:checked {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: #b65a00;
+    background-image: linear-gradient(to right, #c05f00, #ab5500);
+    box-shadow: 0 2px 4px rgba(182, 90, 0, 0.25); }
+  infobar.question button:disabled,
+  infobar.question button.flat:disabled, infobar.warning button:disabled,
+  infobar.warning button.flat:disabled, infobar.question.action:hover button:disabled,
+  infobar.question.action:hover button.flat:disabled, infobar.warning.action:hover button:disabled,
+  infobar.warning.action:hover button.flat:disabled {
+    color: #eeb884;
+    border-color: #ca6400;
+    background-image: image(#dd7108);
+    box-shadow: none; }
+  infobar.question button:backdrop,
+  infobar.question button.flat:backdrop, infobar.warning button:backdrop,
+  infobar.warning button.flat:backdrop, infobar.question.action:hover button:backdrop,
+  infobar.question.action:hover button.flat:backdrop, infobar.warning.action:hover button:backdrop,
+  infobar.warning.action:hover button.flat:backdrop {
+    color: #ffe5cc;
+    border-color: #ca6400;
+    background-image: image(@color3);
+    box-shadow: none;
+    border-color: #ca6400; }
+    infobar.question button:backdrop:disabled,
+    infobar.question button.flat:backdrop:disabled, infobar.warning button:backdrop:disabled,
+    infobar.warning button.flat:backdrop:disabled, infobar.question.action:hover button:backdrop:disabled,
+    infobar.question.action:hover button.flat:backdrop:disabled, infobar.warning.action:hover button:backdrop:disabled,
+    infobar.warning.action:hover button.flat:backdrop:disabled {
+      color: #e9a35e;
+      border-color: #ca6400;
+      background-image: image(#dd7108);
+      box-shadow: none;
+      border-color: #ca6400; }
+  infobar.question button:backdrop label, infobar.question button:backdrop, infobar.question button label, infobar.question button,
+  infobar.question button.flat:backdrop label,
+  infobar.question button.flat:backdrop,
+  infobar.question button.flat label,
+  infobar.question button.flat, infobar.warning button:backdrop label, infobar.warning button:backdrop, infobar.warning button label, infobar.warning button,
+  infobar.warning button.flat:backdrop label,
+  infobar.warning button.flat:backdrop,
+  infobar.warning button.flat label,
+  infobar.warning button.flat, infobar.question.action:hover button:backdrop label, infobar.question.action:hover button:backdrop, infobar.question.action:hover button label, infobar.question.action:hover button,
+  infobar.question.action:hover button.flat:backdrop label,
+  infobar.question.action:hover button.flat:backdrop,
+  infobar.question.action:hover button.flat label,
+  infobar.question.action:hover button.flat, infobar.warning.action:hover button:backdrop label, infobar.warning.action:hover button:backdrop, infobar.warning.action:hover button label, infobar.warning.action:hover button,
+  infobar.warning.action:hover button.flat:backdrop label,
+  infobar.warning.action:hover button.flat:backdrop,
+  infobar.warning.action:hover button.flat label,
+  infobar.warning.action:hover button.flat {
+    color: @color15; }
+
+infobar.error:backdrop > revealer > box, infobar.error > revealer > box, infobar.error.action:hover:backdrop > revealer > box, infobar.error.action:hover > revealer > box {
+  background-color: @color0; }
+  infobar.error:backdrop > revealer > box button,
+  infobar.error:backdrop > revealer > box button.flat, infobar.error > revealer > box button,
+  infobar.error > revealer > box button.flat, infobar.error.action:hover:backdrop > revealer > box button,
+  infobar.error.action:hover:backdrop > revealer > box button.flat, infobar.error.action:hover > revealer > box button,
+  infobar.error.action:hover > revealer > box button.flat {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: lighter(@color1);
+    background-image: image(lighter(@color9));
+    box-shadow: none; }
+    infobar.error:backdrop > revealer > box button:hover,
+    infobar.error:backdrop > revealer > box button.flat:hover, infobar.error > revealer > box button:hover,
+    infobar.error > revealer > box button.flat:hover, infobar.error.action:hover:backdrop > revealer > box button:hover,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:hover, infobar.error.action:hover > revealer > box button:hover,
+    infobar.error.action:hover > revealer > box button.flat:hover {
+      color: @color15;
+      outline-color: rgba(255, 255, 255, 0.3);
+      border-color: @color1;
+      background-image: image(lighter(@color9));
+      box-shadow: none; }
+    infobar.error:backdrop > revealer > box button:active, infobar.error:backdrop > revealer > box button:checked,
+    infobar.error:backdrop > revealer > box button.flat:active,
+    infobar.error:backdrop > revealer > box button.flat:checked, infobar.error > revealer > box button:active, infobar.error > revealer > box button:checked,
+    infobar.error > revealer > box button.flat:active,
+    infobar.error > revealer > box button.flat:checked, infobar.error.action:hover:backdrop > revealer > box button:active, infobar.error.action:hover:backdrop > revealer > box button:checked,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:active,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:checked, infobar.error.action:hover > revealer > box button:active, infobar.error.action:hover > revealer > box button:checked,
+    infobar.error.action:hover > revealer > box button.flat:active,
+    infobar.error.action:hover > revealer > box button.flat:checked {
+      color: @color15;
+      outline-color: rgba(255, 255, 255, 0.3);
+      border-color: @color1;
+      background-image: linear-gradient(to right, @color9, @color1);
+      box-shadow: 0 2px 4px rgba(127, 15, 15, 0.25); }
+    infobar.error:backdrop > revealer > box button:disabled,
+    infobar.error:backdrop > revealer > box button.flat:disabled, infobar.error > revealer > box button:disabled,
+    infobar.error > revealer > box button.flat:disabled, infobar.error.action:hover:backdrop > revealer > box button:disabled,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:disabled, infobar.error.action:hover > revealer > box button:disabled,
+    infobar.error.action:hover > revealer > box button.flat:disabled {
+      color: @color9;
+      border-color: @color1;
+      background-image: image(@color9);
+      box-shadow: none; }
+    infobar.error:backdrop > revealer > box button:backdrop,
+    infobar.error:backdrop > revealer > box button.flat:backdrop, infobar.error > revealer > box button:backdrop,
+    infobar.error > revealer > box button.flat:backdrop, infobar.error.action:hover:backdrop > revealer > box button:backdrop,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:backdrop, infobar.error.action:hover > revealer > box button:backdrop,
+    infobar.error.action:hover > revealer > box button.flat:backdrop {
+      color: lighter(@color9);
+      border-color: @color1;
+      background-image: image(@color1);
+      box-shadow: none;
+      border-color: @color1; }
+      infobar.error:backdrop > revealer > box button:backdrop:disabled,
+      infobar.error:backdrop > revealer > box button.flat:backdrop:disabled, infobar.error > revealer > box button:backdrop:disabled,
+      infobar.error > revealer > box button.flat:backdrop:disabled, infobar.error.action:hover:backdrop > revealer > box button:backdrop:disabled,
+      infobar.error.action:hover:backdrop > revealer > box button.flat:backdrop:disabled, infobar.error.action:hover > revealer > box button:backdrop:disabled,
+      infobar.error.action:hover > revealer > box button.flat:backdrop:disabled {
+        color: @color15;
+        border-color: @color1;
+        background-image: image(@color9);
+        box-shadow: none;
+        border-color: @color1; }
+    infobar.error:backdrop > revealer > box button:backdrop label, infobar.error:backdrop > revealer > box button:backdrop, infobar.error:backdrop > revealer > box button label, infobar.error:backdrop > revealer > box button,
+    infobar.error:backdrop > revealer > box button.flat:backdrop label,
+    infobar.error:backdrop > revealer > box button.flat:backdrop,
+    infobar.error:backdrop > revealer > box button.flat label,
+    infobar.error:backdrop > revealer > box button.flat, infobar.error > revealer > box button:backdrop label, infobar.error > revealer > box button:backdrop, infobar.error > revealer > box button label, infobar.error > revealer > box button,
+    infobar.error > revealer > box button.flat:backdrop label,
+    infobar.error > revealer > box button.flat:backdrop,
+    infobar.error > revealer > box button.flat label,
+    infobar.error > revealer > box button.flat, infobar.error.action:hover:backdrop > revealer > box button:backdrop label, infobar.error.action:hover:backdrop > revealer > box button:backdrop, infobar.error.action:hover:backdrop > revealer > box button label, infobar.error.action:hover:backdrop > revealer > box button,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:backdrop label,
+    infobar.error.action:hover:backdrop > revealer > box button.flat:backdrop,
+    infobar.error.action:hover:backdrop > revealer > box button.flat label,
+    infobar.error.action:hover:backdrop > revealer > box button.flat, infobar.error.action:hover > revealer > box button:backdrop label, infobar.error.action:hover > revealer > box button:backdrop, infobar.error.action:hover > revealer > box button label, infobar.error.action:hover > revealer > box button,
+    infobar.error.action:hover > revealer > box button.flat:backdrop label,
+    infobar.error.action:hover > revealer > box button.flat:backdrop,
+    infobar.error.action:hover > revealer > box button.flat label,
+    infobar.error.action:hover > revealer > box button.flat {
+      color: @color15; }

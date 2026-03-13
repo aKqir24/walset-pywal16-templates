@@ -1,6 +1,97 @@
-/*************
- * Notebooks *
- *************/
+notebook > header {
+  border: 0;
+  padding: 0;
+  background-color: #1d2027; }
+  notebook > header.top > tabs, notebook > header.bottom > tabs, notebook > header.left > tabs, notebook > header.right > tabs {
+    margin: 0; }
+    notebook > header.top > tabs > tab,
+    notebook > header.top > tabs > tab.reorderable-page, notebook > header.bottom > tabs > tab,
+    notebook > header.bottom > tabs > tab.reorderable-page, notebook > header.left > tabs > tab,
+    notebook > header.left > tabs > tab.reorderable-page, notebook > header.right > tabs > tab,
+    notebook > header.right > tabs > tab.reorderable-page {
+      border: 1px solid transparent; }
+      notebook > header.top > tabs > tab:hover:not(:backdrop),
+      notebook > header.top > tabs > tab.reorderable-page:hover:not(:backdrop), notebook > header.bottom > tabs > tab:hover:not(:backdrop),
+      notebook > header.bottom > tabs > tab.reorderable-page:hover:not(:backdrop), notebook > header.left > tabs > tab:hover:not(:backdrop),
+      notebook > header.left > tabs > tab.reorderable-page:hover:not(:backdrop), notebook > header.right > tabs > tab:hover:not(:backdrop),
+      notebook > header.right > tabs > tab.reorderable-page:hover:not(:backdrop) {
+        color: @color15;
+        outline-color: rgba(238, 238, 236, 0.3);
+        border-color: @color0;
+        background-image: image(#414657);
+        box-shadow: none; }
+      notebook > header.top > tabs > tab:checked,
+      notebook > header.top > tabs > tab.reorderable-page:checked, notebook > header.bottom > tabs > tab:checked,
+      notebook > header.bottom > tabs > tab.reorderable-page:checked, notebook > header.left > tabs > tab:checked,
+      notebook > header.left > tabs > tab.reorderable-page:checked, notebook > header.right > tabs > tab:checked,
+      notebook > header.right > tabs > tab.reorderable-page:checked {
+        color: @color15;
+        outline-color: rgba(238, 238, 236, 0.3);
+        border-color: @color0;
+        background-image: image(#323643);
+        box-shadow: none;
+        background: image(@color1); }
+        notebook > header.top > tabs > tab:checked:backdrop,
+        notebook > header.top > tabs > tab.reorderable-page:checked:backdrop, notebook > header.bottom > tabs > tab:checked:backdrop,
+        notebook > header.bottom > tabs > tab.reorderable-page:checked:backdrop, notebook > header.left > tabs > tab:checked:backdrop,
+        notebook > header.left > tabs > tab.reorderable-page:checked:backdrop, notebook > header.right > tabs > tab:checked:backdrop,
+        notebook > header.right > tabs > tab.reorderable-page:checked:backdrop {
+          color: @color7;
+          border-color: @color0;
+          background-image: image(#323643);
+          box-shadow: none;
+          background: image(@color1); }
+  notebook > header.top {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.top > tabs {
+      margin-bottom: -3px; }
+      notebook > header.top > tabs > tab {
+        margin: 3px 0;
+        border-radius: 6px 6px 0 0; }
+        notebook > header.top > tabs > tab:not(:checked) {
+          box-shadow: 4px 3px 0 -3px @color0; }
+        notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:backdrop {
+          border-bottom-color: @color1; }
+  notebook > header.bottom {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.bottom > tabs {
+      margin-top: -3px; }
+      notebook > header.bottom > tabs > tab {
+        margin: 3px 0;
+        border-radius: 0 0 6px 6px; }
+        notebook > header.bottom > tabs > tab:not(:checked) {
+          box-shadow: 4px -3px 0 -3px @color0; }
+        notebook > header.bottom > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked:backdrop {
+          border-top-color: @color1; }
+  notebook > header.right {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.right > tabs {
+      margin-left: -3px; }
+      notebook > header.right > tabs > tab {
+        margin: 0 3px;
+        border-radius: 0 6px 6px 0; }
+        notebook > header.right > tabs > tab:not(:checked) {
+          box-shadow: -3px 4px 0 -3px @color0; }
+        notebook > header.right > tabs > tab:checked, notebook > header.right > tabs > tab:checked:backdrop {
+          border-left-color: @color1; }
+  notebook > header.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.left > tabs {
+      margin-right: -3px; }
+      notebook > header.left > tabs > tab {
+        margin: 0 3px;
+        border-radius: 6px 0 0 6px; }
+        notebook > header.left > tabs > tab:not(:checked) {
+          box-shadow: 3px 4px 0 -3px @color0; }
+        notebook > header.left > tabs > tab:checked, notebook > header.left > tabs > tab:checked:backdrop {
+          border-right-color: @color1; }
+  notebook > header tab {
+    border-radius: 6px;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    min-height: 24px; }
+    notebook > header tab button.flat {
+      margin-top: 1px;
+      margin-bottom: 1px; }
 notebook > header {
   padding: 1px;
   border-color: @color0;
