@@ -35,4 +35,4 @@
 @import url("styles/scrollbar.css");
 
 @import url("toggles.css");
-@import url("toolbars.css");
+@import url("base.css");
