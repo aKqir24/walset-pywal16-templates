@@ -1,0 +1,13 @@
+.osd .scale-popup, .app-notification,
+.app-notification.frame, .csd popover.background.osd, popover.background.osd, .csd popover.background.touch-selection, .csd popover.background.magnifier, popover.background.touch-selection, popover.background.magnifier,
+.osd {
+  color: @color15;
+  border: none;
+  background-color: #303340;
+  background-clip: padding-box;
+  text-shadow: 0 1px black;
+  -gtk-icon-shadow: 0 1px black; }
+  .osd .scale-popup:backdrop, .app-notification:backdrop, popover.background.osd:backdrop, popover.background.touch-selection:backdrop, popover.background.magnifier:backdrop,
+  .osd:backdrop {
+    text-shadow: none;
+    -gtk-icon-shadow: none; }

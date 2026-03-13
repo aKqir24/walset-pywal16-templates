@@ -1,0 +1,137 @@
+treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
+  background-color: @color1;
+  transition-property: color, background; }
+
+treeview entry.flat, treeview entry {
+  border-radius: 0;
+  background-image: none;
+  background-color: @color1; }
+  treeview entry.flat:focus, treeview entry:focus {
+    border-color: @color2; }
+
+.entry-tag {
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-style: none;
+  color: @color1;
+  background-color: #8b8c90; }
+  :dir(ltr) .entry-tag {
+    margin-left: 8px;
+    margin-right: -5px; }
+  :dir(rtl) .entry-tag {
+    margin-left: -5px;
+    margin-right: 8px; }
+  .entry-tag:hover {
+    background-color: #a5a6a9; }
+  :backdrop .entry-tag {
+    color: @color8;
+    background-color: #595b62; }
+  .entry-tag.button {
+    background-color: transparent;
+    color: rgba(39, 42, 52, 0.7); }
+  :not(:backdrop) .entry-tag.button:hover {
+    border: 1px solid #8b8c90;
+    color: @color1; }
+  :not(:backdrop) .entry-tag.button:active {
+    background-color: #8b8c90;
+    color: rgba(39, 42, 52, 0.7); }
+
+.stack-switcher > button {
+  outline-offset: -3px; }
+  .stack-switcher > button > label {
+    padding-left: 6px;
+    padding-right: 6px; }
+  .stack-switcher > button > image {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+  .stack-switcher > button.text-button {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .stack-switcher > button.image-button {
+    padding-left: 2px;
+    padding-right: 2px; }
+  .stack-switcher > button.needs-attention:active > label,
+  .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label,
+  .stack-switcher > button.needs-attention:checked > image {
+    animation: none;
+    background-image: none; }
+
+
+button.font separator,
+button.file separator {
+  background-color: transparent; }
+
+
+button.font > box > box > label {
+  font-weight: bold; }
+
+.primary-toolbar button {
+  -gtk-icon-shadow: none; }
+
+button.circular {
+  border-radius: 9999px;
+  -gtk-outline-radius: 9999px;
+  padding: 2px;
+  /* circles instead of ellipses */
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box; }
+
+  button.circular label {
+    padding: 0; }
+
+  button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#323643), linear-gradient(to top, black 25%, @color0 50%);
+    box-shadow: none;
+    border-color: transparent; }
+
+  button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#414657), linear-gradient(to top, black 25%, @color0 50%);
+    box-shadow: none;
+    border-color: transparent; }
+
+/* menu buttons */
+modelbutton.flat,
+.menuitem.button.flat {
+  min-height: 26px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 6px;
+  outline-offset: -2px; }
+  modelbutton.flat:hover,
+  .menuitem.button.flat:hover {
+    background-color: @color8; }
+
+modelbutton.flat arrow {
+  background: none; }
+  modelbutton.flat arrow:hover {
+    background: none; }
+  modelbutton.flat arrow.left {
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
+  modelbutton.flat arrow.right {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+
+/* list buttons */
+/* tone down as per new designs, see issue #1473, #1748 */
+list row button.image-button:not(.flat) {
+  border: 1px solid rgba(19, 21, 26, 0.5); }
+  list row button.image-button:not(.flat):hover {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#414657);
+    box-shadow: none; }
+  list row button.image-button:not(.flat):active, list row button.image-button:not(.flat):checked {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color2;
+    background-image: linear-gradient(to right, @color2, @color10);
+    box-shadow: 0 2px 4px rgba(236, 1, 1, 0.25); }

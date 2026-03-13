@@ -1,0 +1,458 @@
+headerbar {
+  border: none;
+  background: @color0;
+  box-shadow: inset 0 1px rgba(238, 238, 236, 0.07);
+  color: @color15; }
+  headerbar, headerbar:backdrop {
+    box-shadow: none;
+    background: @color0; }
+
+.titlebar:not(headerbar) .title,
+headerbar .title {
+  font-weight: normal; }
+
+.titlebar:not(headerbar) button,
+.titlebar:not(headerbar) entry,
+headerbar button,
+headerbar entry {
+  border: none;
+  background: image(#323643); }
+  .titlebar:not(headerbar) button:disabled,
+  .titlebar:not(headerbar) entry:disabled,
+  headerbar button:disabled,
+  headerbar entry:disabled {
+    background: image(#1a1c23); }
+
+.titlebar:not(headerbar) button:backdrop,
+headerbar button:backdrop {
+  background: image(#323643); }
+  .titlebar:not(headerbar) button:backdrop:disabled,
+  headerbar button:backdrop:disabled {
+    background: image(#1a1c23); }
+
+.titlebar:not(headerbar) entry:focus,
+headerbar entry:focus {
+  background: @color0; }
+
+.titlebar:not(headerbar) stackswitcher button:active, .titlebar:not(headerbar) stackswitcher button:checked,
+.titlebar:not(headerbar) button.toggle:active,
+.titlebar:not(headerbar) button.toggle:checked,
+headerbar stackswitcher button:active,
+headerbar stackswitcher button:checked,
+headerbar button.toggle:active,
+headerbar button.toggle:checked {
+  color: @color15;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: @color2;
+  background-image: linear-gradient(to right, @color2, @color10);
+  box-shadow: 0 2px 4px rgba(236, 1, 1, 0.25); }
+
+.titlebar:not(headerbar) viewswitcher button > stack > box.narrow,
+.titlebar:not(headerbar) hdyviewswitcher > button box.narrow,
+headerbar viewswitcher button > stack > box.narrow,
+headerbar hdyviewswitcher > button box.narrow {
+  margin: -7px 0 -5px; }
+
+.titlebar:not(headerbar) viewswitcher button > stack > box.wide,
+.titlebar:not(headerbar) hdyviewswitcher > button box.wide,
+headerbar viewswitcher button > stack > box.wide,
+headerbar hdyviewswitcher > button box.wide {
+  margin: -8px 0; }
+
+dialog .titlebar:not(headerbar), dialog headerbar {
+  background: @color0;
+  border: 0;
+  box-shadow: none; }
+
+.titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).maximize, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).close,
+headerbar button.titlebutton:not(.appmenu).minimize,
+headerbar button.titlebutton:not(.appmenu).maximize,
+headerbar button.titlebutton:not(.appmenu).close {
+  color: transparent;
+  -gtk-icon-shadow: none;
+  background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 8px;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  min-width: 0;
+  min-height: 0;
+  box-shadow: none;
+  border: none;
+  transition: all .2s; }
+  .titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize + button.titlebutton, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).maximize + button.titlebutton, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).close + button.titlebutton,
+  headerbar button.titlebutton:not(.appmenu).minimize + button.titlebutton,
+  headerbar button.titlebutton:not(.appmenu).maximize + button.titlebutton,
+  headerbar button.titlebutton:not(.appmenu).close + button.titlebutton {
+    margin-left: 0; }
+  .titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize:last-child, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).maximize:last-child, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).close:last-child,
+  headerbar button.titlebutton:not(.appmenu).minimize:last-child,
+  headerbar button.titlebutton:not(.appmenu).maximize:last-child,
+  headerbar button.titlebutton:not(.appmenu).close:last-child {
+    margin-right: 5px; }
+  .titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize:backdrop, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).maximize:backdrop, .titlebar:not(headerbar) button.titlebutton:not(.appmenu).close:backdrop,
+  headerbar button.titlebutton:not(.appmenu).minimize:backdrop,
+  headerbar button.titlebutton:not(.appmenu).maximize:backdrop,
+  headerbar button.titlebutton:not(.appmenu).close:backdrop {
+    background-color: #4e5468;
+    background-image: -gtk-scaled(url("assets/titlebutton.png"), url("assets/titlebutton@2.png")); }
+
+.titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize,
+headerbar button.titlebutton:not(.appmenu).minimize {
+  background-color: @color3; }
+  .titlebar:not(headerbar) button.titlebutton:not(.appmenu).minimize:hover,
+  headerbar button.titlebutton:not(.appmenu).minimize:hover {
+    background-image: -gtk-scaled(url("assets/minimize.png"), url("assets/minimize@2.png")); }
+
+.titlebar:not(headerbar) button.titlebutton:not(.appmenu).maximize,
+headerbar button.titlebutton:not(.appmenu).maximize {
+  background-color: #377cf1; }
+  .titlebar:not(headerbar) button.titlebutton:not(.appmenu).maximize:hover,
+  headerbar button.titlebutton:not(.appmenu).maximize:hover {
+    background-image: -gtk-scaled(url("assets/maximize.png"), url("assets/maximize@2.png")); }
+
+.titlebar:not(headerbar) button.titlebutton:not(.appmenu).close,
+headerbar button.titlebutton:not(.appmenu).close {
+  background-color: lighter(@color9); }
+  .titlebar:not(headerbar) button.titlebutton:not(.appmenu).close:hover,
+  headerbar button.titlebutton:not(.appmenu).close:hover {
+    background-image: -gtk-scaled(url("assets/close.png"), url("assets/close@2.png")); }
+
+.maximized .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .fullscreen .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .tiled .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .tiled-top .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .tiled-right .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .tiled-bottom .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .tiled-left .titlebar:not(headerbar) button.titlebutton:not(.appmenu):last-child, .maximized headerbar button.titlebutton:not(.appmenu):last-child, .fullscreen headerbar button.titlebutton:not(.appmenu):last-child, .tiled headerbar button.titlebutton:not(.appmenu):last-child, .tiled-top headerbar button.titlebutton:not(.appmenu):last-child, .tiled-right headerbar button.titlebutton:not(.appmenu):last-child, .tiled-bottom headerbar button.titlebutton:not(.appmenu):last-child, .tiled-left headerbar button.titlebutton:not(.appmenu):last-child {
+  margin-right: 0; }
+
+.maximized .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .fullscreen .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .tiled .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .tiled-top .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .tiled-right .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .tiled-bottom .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .tiled-left .titlebar:not(headerbar) button.titlebutton:not(.appmenu):first-child, .maximized headerbar button.titlebutton:not(.appmenu):first-child, .fullscreen headerbar button.titlebutton:not(.appmenu):first-child, .tiled headerbar button.titlebutton:not(.appmenu):first-child, .tiled-top headerbar button.titlebutton:not(.appmenu):first-child, .tiled-right headerbar button.titlebutton:not(.appmenu):first-child, .tiled-bottom headerbar button.titlebutton:not(.appmenu):first-child, .tiled-left headerbar button.titlebutton:not(.appmenu):first-child {
+  margin-left: 0; }
+
+.default-decoration.titlebar:not(headerbar),
+headerbar.default-decoration {
+  background: @color0;
+  min-height: 0;
+  padding: 6px; }
+  .default-decoration.titlebar:not(headerbar) button.titlebutton,
+  headerbar.default-decoration button.titlebutton {
+    min-height: 0;
+    min-width: 0; }
+    .default-decoration.titlebar:not(headerbar) button.titlebutton,
+    headerbar.default-decoration button.titlebutton,
+    headerbar.default-decoration button.titlebutton:last-child {
+      margin: 0; }
+
+paned headerbar:first-child,
+hdyleaflet headerbar:first-child,
+headerbar.titlebar headerbar:first-child,
+deck leaflet box:first-child headerbar:first-child,
+leaflet > headerbar:first-child {
+  border-color: @color0;
+  background: @color1;
+  box-shadow: none; }
+  paned headerbar:first-child:backdrop,
+  hdyleaflet headerbar:first-child:backdrop,
+  headerbar.titlebar headerbar:first-child:backdrop,
+  deck leaflet box:first-child headerbar:first-child:backdrop,
+  leaflet > headerbar:first-child:backdrop {
+    background: @color8; }
+
+.titlebar:not(headerbar),
+headerbar {
+  padding: 0 6px;
+  min-height: 40px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0;
+  background: #0d0e11 linear-gradient(to top, #16171d, #1a1c23);
+  box-shadow: inset 0 1px rgba(238, 238, 236, 0.07);
+  /* Darken switchbuttons for headerbars. issue #1588 */
+  /* hide the close button separator */ }
+  .titlebar:backdrop:not(headerbar),
+  headerbar:backdrop {
+    border-color: @color0;
+    background-color: @color0;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(238, 238, 236, 0.07);
+    transition: 200ms ease-out; }
+  .titlebar:not(headerbar) .title,
+  headerbar .title {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-weight: bold; }
+  .titlebar:not(headerbar) .subtitle,
+  headerbar .subtitle {
+    font-size: smaller;
+    padding-left: 12px;
+    padding-right: 12px; }
+  .titlebar:not(headerbar) stackswitcher button:checked,
+  .titlebar:not(headerbar) button.toggle:checked,
+  headerbar stackswitcher button:checked,
+  headerbar button.toggle:checked {
+    background: image(#0f1014);
+    border-color: #0d0e11;
+    border-top-color: #020202; }
+    .titlebar:not(headerbar) stackswitcher button:checked:backdrop,
+    .titlebar:not(headerbar) button.toggle:checked:backdrop,
+    headerbar stackswitcher button:checked:backdrop,
+    headerbar button.toggle:checked:backdrop {
+      color: @color15;
+      border-color: @color2;
+      background-image: image(#c4080a);
+      box-shadow: none; }
+  .selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar,
+  headerbar.selection-mode {
+    color: @color15;
+    border-color: #540000;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    background: @color2 linear-gradient(to top, #fe0303, #fe0e0e);
+    box-shadow: inset 0 1px rgba(236, 9, 9, 0.535); }
+    .selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop,
+    headerbar.selection-mode:backdrop {
+      background-color: @color2;
+      background-image: none;
+      box-shadow: inset 0 1px rgba(236, 13, 13, 0.442); }
+      .selection-mode .titlebar:backdrop:not(headerbar) label, .selection-mode.titlebar:backdrop:not(headerbar) label, .selection-mode headerbar:backdrop label,
+      headerbar.selection-mode:backdrop label {
+        text-shadow: none;
+        color: @color15; }
+    .selection-mode .titlebar:not(headerbar) button, .selection-mode.titlebar:not(headerbar) button, .selection-mode headerbar button,
+    headerbar.selection-mode button {
+      color: @color15;
+      outline-color: rgba(255, 255, 255, 0.3);
+      border-color: #dd0101;
+      background-image: image(@color2);
+      box-shadow: none; }
+      .selection-mode button.titlebutton, .selection-mode .titlebar:not(headerbar) button.flat, .selection-mode.titlebar:not(headerbar) button.flat, .selection-mode headerbar button.flat,
+      headerbar.selection-mode button.flat {
+        border-color: transparent;
+        background-color: transparent;
+        background-image: none;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+        text-shadow: none;
+        -gtk-icon-shadow: none; }
+      .selection-mode .titlebar:not(headerbar) button:hover, .selection-mode.titlebar:not(headerbar) button:hover, .selection-mode headerbar button:hover,
+      headerbar.selection-mode button:hover {
+        color: @color15;
+        outline-color: rgba(255, 255, 255, 0.3);
+        border-color: @color2;
+        background-image: image(#fe3636);
+        box-shadow: none; }
+      .selection-mode .titlebar:not(headerbar) button:active, .selection-mode .titlebar:not(headerbar) button:checked, .selection-mode.titlebar:not(headerbar) button:active, .selection-mode.titlebar:not(headerbar) button:checked, .selection-mode headerbar button:active, .selection-mode headerbar button:checked, .selection-mode headerbar button.toggle:checked, .selection-mode headerbar button.toggle:active,
+      headerbar.selection-mode button:active,
+      headerbar.selection-mode button:checked,
+      headerbar.selection-mode button.toggle:checked,
+      headerbar.selection-mode button.toggle:active {
+        color: @color15;
+        outline-color: rgba(255, 255, 255, 0.3);
+        border-color: #a50101;
+        background-image: linear-gradient(to right, #af0101, #9b0101);
+        box-shadow: 0 2px 4px rgba(165, 1, 1, 0.25); }
+      .selection-mode .titlebar:not(headerbar) button:backdrop, .selection-mode.titlebar:not(headerbar) button:backdrop, .selection-mode headerbar button:backdrop.flat, .selection-mode headerbar button:backdrop,
+      headerbar.selection-mode button:backdrop.flat,
+      headerbar.selection-mode button:backdrop {
+        color: #fbcccc;
+        border-color: @color2;
+        background-image: image(@color2);
+        box-shadow: none;
+        -gtk-icon-effect: none;
+        border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button:backdrop:active, .selection-mode .titlebar:not(headerbar) button:backdrop:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:active, .selection-mode.titlebar:not(headerbar) button:backdrop:checked, .selection-mode headerbar button:backdrop.flat:active, .selection-mode headerbar button:backdrop.flat:checked, .selection-mode headerbar button:backdrop:active, .selection-mode headerbar button:backdrop:checked,
+        headerbar.selection-mode button:backdrop.flat:active,
+        headerbar.selection-mode button:backdrop.flat:checked,
+        headerbar.selection-mode button:backdrop:active,
+        headerbar.selection-mode button:backdrop:checked {
+          color: @color15;
+          border-color: @color2;
+          background-image: image(#c4080a);
+          box-shadow: none;
+          border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button:backdrop:disabled, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled, .selection-mode headerbar button:backdrop.flat:disabled, .selection-mode headerbar button:backdrop:disabled,
+        headerbar.selection-mode button:backdrop.flat:disabled,
+        headerbar.selection-mode button:backdrop:disabled {
+          color: #df5e5f;
+          border-color: @color2;
+          background-image: image(#ce0709);
+          box-shadow: none;
+          border-color: #540000; }
+          .selection-mode .titlebar:not(headerbar) button:backdrop:disabled:active, .selection-mode .titlebar:not(headerbar) button:backdrop:disabled:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled:active, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled:checked, .selection-mode headerbar button:backdrop:disabled:active, .selection-mode headerbar button:backdrop:disabled:checked,
+          headerbar.selection-mode button:backdrop:disabled:active,
+          headerbar.selection-mode button:backdrop:disabled:checked {
+            color: #d25d5f;
+            border-color: @color2;
+            background-image: image(#ba0608);
+            box-shadow: none;
+            border-color: #540000; }
+      .selection-mode button.titlebutton:backdrop, .selection-mode button.titlebutton:disabled, .selection-mode .titlebar:not(headerbar) button.flat:backdrop, .selection-mode .titlebar:not(headerbar) button.flat:disabled, .selection-mode.titlebar:not(headerbar) button.flat:backdrop, .selection-mode.titlebar:not(headerbar) button.flat:disabled, .selection-mode headerbar button.flat:backdrop, .selection-mode headerbar button.flat:disabled, .selection-mode headerbar button.flat:backdrop:disabled,
+      headerbar.selection-mode button.flat:backdrop,
+      headerbar.selection-mode button.flat:disabled,
+      headerbar.selection-mode button.flat:backdrop:disabled {
+        border-color: transparent;
+        background-color: transparent;
+        background-image: none;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+        text-shadow: none;
+        -gtk-icon-shadow: none; }
+      .selection-mode .titlebar:not(headerbar) button:disabled, .selection-mode.titlebar:not(headerbar) button:disabled, .selection-mode headerbar button:disabled,
+      headerbar.selection-mode button:disabled {
+        color: #e78384;
+        border-color: @color2;
+        background-image: image(#ce0709);
+        box-shadow: none; }
+        .selection-mode .titlebar:not(headerbar) button:disabled:active, .selection-mode .titlebar:not(headerbar) button:disabled:checked, .selection-mode.titlebar:not(headerbar) button:disabled:active, .selection-mode.titlebar:not(headerbar) button:disabled:checked, .selection-mode headerbar button:disabled:active, .selection-mode headerbar button:disabled:checked,
+        headerbar.selection-mode button:disabled:active,
+        headerbar.selection-mode button:disabled:checked {
+          color: #e09b9c;
+          border-color: @color2;
+          background-image: image(#b00608);
+          box-shadow: none; }
+      .selection-mode .titlebar:not(headerbar) button.suggested-action, .selection-mode.titlebar:not(headerbar) button.suggested-action, .selection-mode headerbar button.suggested-action,
+      headerbar.selection-mode button.suggested-action {
+        color: @color15;
+        outline-color: rgba(238, 238, 236, 0.3);
+        border-color: @color0;
+        background-image: image(#323643);
+        box-shadow: none;
+        border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button.suggested-action:hover, .selection-mode.titlebar:not(headerbar) button.suggested-action:hover, .selection-mode headerbar button.suggested-action:hover,
+        headerbar.selection-mode button.suggested-action:hover {
+          color: @color15;
+          outline-color: rgba(238, 238, 236, 0.3);
+          border-color: @color0;
+          background-image: image(#414657);
+          box-shadow: none;
+          border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button.suggested-action:active, .selection-mode.titlebar:not(headerbar) button.suggested-action:active, .selection-mode headerbar button.suggested-action:active,
+        headerbar.selection-mode button.suggested-action:active {
+          color: @color15;
+          outline-color: rgba(238, 238, 236, 0.3);
+          border-color: @color2;
+          background-image: linear-gradient(to right, @color2, @color10);
+          box-shadow: 0 2px 4px rgba(236, 1, 1, 0.25);
+          border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode headerbar button.suggested-action:disabled,
+        headerbar.selection-mode button.suggested-action:disabled {
+          color: @color7;
+          border-color: @color0;
+          background-image: image(@color0);
+          box-shadow: none;
+          border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button.suggested-action:backdrop, .selection-mode.titlebar:not(headerbar) button.suggested-action:backdrop, .selection-mode headerbar button.suggested-action:backdrop,
+        headerbar.selection-mode button.suggested-action:backdrop {
+          color: @color7;
+          border-color: @color0;
+          background-image: image(#323643);
+          box-shadow: none;
+          border-color: #540000; }
+        .selection-mode .titlebar:not(headerbar) button.suggested-action:backdrop:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:backdrop:disabled, .selection-mode headerbar button.suggested-action:backdrop:disabled,
+        headerbar.selection-mode button.suggested-action:backdrop:disabled {
+          color: @color7;
+          border-color: @color0;
+          background-image: image(@color0);
+          box-shadow: none;
+          border-color: #540000; }
+    .selection-mode .titlebar:not(headerbar) .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu, .selection-mode headerbar .selection-menu:backdrop, .selection-mode headerbar .selection-menu,
+    headerbar.selection-mode .selection-menu:backdrop,
+    headerbar.selection-mode .selection-menu {
+      border-color: rgba(236, 1, 1, 0);
+      background-color: rgba(236, 1, 1, 0);
+      background-image: none;
+      box-shadow: none;
+      min-height: 20px;
+      padding: 4px 10px; }
+      .selection-mode .titlebar:not(headerbar) .selection-menu arrow, .selection-mode.titlebar:not(headerbar) .selection-menu arrow, .selection-mode headerbar .selection-menu:backdrop arrow, .selection-mode headerbar .selection-menu arrow,
+      headerbar.selection-mode .selection-menu:backdrop arrow,
+      headerbar.selection-mode .selection-menu arrow {
+        -GtkArrow-arrow-scaling: 1; }
+      .selection-mode .titlebar:not(headerbar) .selection-menu .arrow, .selection-mode.titlebar:not(headerbar) .selection-menu .arrow, .selection-mode headerbar .selection-menu:backdrop .arrow, .selection-mode headerbar .selection-menu .arrow,
+      headerbar.selection-mode .selection-menu:backdrop .arrow,
+      headerbar.selection-mode .selection-menu .arrow {
+        -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+        color: rgba(255, 255, 255, 0.5);
+        -gtk-icon-shadow: none; }
+  .tiled .titlebar:not(headerbar), .tiled-top .titlebar:not(headerbar), .tiled-right .titlebar:not(headerbar), .tiled-bottom .titlebar:not(headerbar), .tiled-left .titlebar:not(headerbar), .maximized .titlebar:not(headerbar), .fullscreen .titlebar:not(headerbar), .tiled headerbar, .tiled-top headerbar, .tiled-right headerbar, .tiled-bottom headerbar, .tiled-left headerbar, .maximized headerbar, .fullscreen headerbar {
+    border-radius: 0; }
+  .default-decoration.titlebar:not(headerbar),
+  headerbar.default-decoration {
+    min-height: 28px;
+    padding: 4px; }
+    .default-decoration.titlebar:not(headerbar) button.titlebutton,
+    headerbar.default-decoration button.titlebutton {
+      min-height: 26px;
+      min-width: 26px;
+      margin: 0;
+      padding: 0; }
+  .titlebar:not(headerbar) separator.titlebutton,
+  headerbar separator.titlebutton {
+    opacity: 0; }
+  .solid-csd .titlebar:dir(rtl):not(headerbar), .solid-csd .titlebar:dir(ltr):not(headerbar), .solid-csd headerbar:backdrop:dir(rtl), .solid-csd headerbar:backdrop:dir(ltr), .solid-csd headerbar:dir(rtl), .solid-csd headerbar:dir(ltr) {
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+    border-radius: 0;
+    box-shadow: none; }
+
+headerbar entry,
+headerbar spinbutton,
+headerbar separator:not(.sidebar),
+headerbar button {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+headerbar switch {
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+headerbar.titlebar headerbar:not(.titlebar) {
+  background: none;
+  box-shadow: none; }
+
+.background .titlebar:backdrop, .background .titlebar {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px; }
+
+.background.tiled .titlebar:backdrop, .background.tiled .titlebar,
+.background.tiled-top .titlebar:backdrop,
+.background.tiled-top .titlebar,
+.background.tiled-right .titlebar:backdrop,
+.background.tiled-right .titlebar,
+.background.tiled-bottom .titlebar:backdrop,
+.background.tiled-bottom .titlebar,
+.background.tiled-left .titlebar:backdrop,
+.background.tiled-left .titlebar,
+.background.maximized .titlebar:backdrop,
+.background.maximized .titlebar,
+.background.solid-csd .titlebar:backdrop,
+.background.solid-csd .titlebar {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child {
+  border-top-left-radius: 7px; }
+
+window headerbar:last-child:backdrop, window headerbar:last-child {
+  border-top-right-radius: 7px; }
+
+window stack headerbar:first-child:backdrop, window stack headerbar:first-child, window stack headerbar:last-child:backdrop, window stack headerbar:last-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; }
+
+window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerbar:last-child, window.tiled headerbar:only-child, window.tiled headerbar:backdrop, window.tiled headerbar:backdrop:first-child, window.tiled headerbar:backdrop:last-child, window.tiled headerbar:backdrop:only-child, window.tiled-top headerbar, window.tiled-top headerbar:first-child, window.tiled-top headerbar:last-child, window.tiled-top headerbar:only-child, window.tiled-top headerbar:backdrop, window.tiled-top headerbar:backdrop:first-child, window.tiled-top headerbar:backdrop:last-child, window.tiled-top headerbar:backdrop:only-child, window.tiled-right headerbar, window.tiled-right headerbar:first-child, window.tiled-right headerbar:last-child, window.tiled-right headerbar:only-child, window.tiled-right headerbar:backdrop, window.tiled-right headerbar:backdrop:first-child, window.tiled-right headerbar:backdrop:last-child, window.tiled-right headerbar:backdrop:only-child, window.tiled-bottom headerbar, window.tiled-bottom headerbar:first-child, window.tiled-bottom headerbar:last-child, window.tiled-bottom headerbar:only-child, window.tiled-bottom headerbar:backdrop, window.tiled-bottom headerbar:backdrop:first-child, window.tiled-bottom headerbar:backdrop:last-child, window.tiled-bottom headerbar:backdrop:only-child, window.tiled-left headerbar, window.tiled-left headerbar:first-child, window.tiled-left headerbar:last-child, window.tiled-left headerbar:only-child, window.tiled-left headerbar:backdrop, window.tiled-left headerbar:backdrop:first-child, window.tiled-left headerbar:backdrop:last-child, window.tiled-left headerbar:backdrop:only-child, window.maximized headerbar, window.maximized headerbar:first-child, window.maximized headerbar:last-child, window.maximized headerbar:only-child, window.maximized headerbar:backdrop, window.maximized headerbar:backdrop:first-child, window.maximized headerbar:backdrop:last-child, window.maximized headerbar:backdrop:only-child, window.fullscreen headerbar, window.fullscreen headerbar:first-child, window.fullscreen headerbar:last-child, window.fullscreen headerbar:only-child, window.fullscreen headerbar:backdrop, window.fullscreen headerbar:backdrop:first-child, window.fullscreen headerbar:backdrop:last-child, window.fullscreen headerbar:backdrop:only-child, window.solid-csd headerbar, window.solid-csd headerbar:first-child, window.solid-csd headerbar:last-child, window.solid-csd headerbar:only-child, window.solid-csd headerbar:backdrop, window.solid-csd headerbar:backdrop:first-child, window.solid-csd headerbar:backdrop:last-child, window.solid-csd headerbar:backdrop:only-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+window.csd > .titlebar:not(headerbar) {
+  padding: 0;
+  background-color: transparent;
+  background-image: none;
+  border-style: none;
+  border-color: transparent;
+  box-shadow: none; }
+
+.titlebar:not(headerbar) separator {
+  background-color: @color0; }
+
+window.devel headerbar.titlebar:not(.selection-mode) {
+  background: @color0 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, linear-gradient(to right, transparent 65%, rgba(236, 1, 1, 0.1)), linear-gradient(to top, @color0 3px, #181a20); }
+  window.devel headerbar.titlebar:not(.selection-mode):backdrop {
+    background: @color0 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, image(#23252e);
+    /* background-color would flash */ }

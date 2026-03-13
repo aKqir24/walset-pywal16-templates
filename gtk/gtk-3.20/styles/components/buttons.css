@@ -1,0 +1,348 @@
+@keyframes needs_attention {
+  from {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(#fe3b3b), to(transparent)); }
+  to {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(@color2), to(transparent)); } }
+
+button.font separator,
+button.file separator {
+  background-color: transparent; }
+
+button.font > box > box > label {
+  font-weight: bold; }
+
+.primary-toolbar button {
+  -gtk-icon-shadow: none; }
+
+button.circular {
+  border-radius: 9999px;
+  -gtk-outline-radius: 9999px;
+  padding: 2px;
+  /* circles instead of ellipses */
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box; }
+
+  button.circular label {
+    padding: 0; }
+
+  button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#323643), linear-gradient(to top, black 25%, @color0 50%);
+    box-shadow: none;
+    border-color: transparent; }
+
+  button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#414657), linear-gradient(to top, black 25%, @color0 50%);
+    box-shadow: none;
+    border-color: transparent; }
+
+button.titlebutton, notebook > header > tabs > arrow,
+button {
+  min-height: 24px;
+  min-width: 16px;
+  padding: 2px 6px;
+  border: 1px solid;
+  border-radius: 6px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: @color15;
+  outline-color: rgba(238, 238, 236, 0.3);
+  border-color: @color0;
+  background-image: image(#323643);
+  box-shadow: none; }
+  button.titlebutton, button.sidebar-button, notebook > header > tabs > arrow, notebook > header > tabs > arrow.flat,
+  button.flat {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    transition: none; }
+    button.titlebutton:hover, button.sidebar-button:hover, notebook > header > tabs > arrow:hover,
+    button.flat:hover {
+      transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition-duration: 500ms; }
+      button.titlebutton:hover:active, button.sidebar-button:hover:active, notebook > header > tabs > arrow:hover:active,
+      button.flat:hover:active {
+        transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  notebook > header > tabs > arrow:hover,
+  button:hover {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color0;
+    background-image: image(#414657);
+    box-shadow: none;
+    -gtk-icon-effect: highlight; }
+  notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
+  button:active,
+  button:checked {
+    color: @color15;
+    outline-color: rgba(238, 238, 236, 0.3);
+    border-color: @color2;
+    background-image: linear-gradient(to right, @color2, @color10);
+    box-shadow: 0 2px 4px rgba(236, 1, 1, 0.25);
+    transition-duration: 50ms; }
+  notebook > header > tabs > arrow:backdrop,
+  button:backdrop.flat,
+  button:backdrop {
+    color: @color7;
+    border-color: @color0;
+    background-image: image(#323643);
+    box-shadow: none;
+    transition: 200ms ease-out;
+    -gtk-icon-effect: none; }
+    notebook > header > tabs > arrow:backdrop:active, notebook > header > tabs > arrow:backdrop:checked,
+    button:backdrop.flat:active,
+    button:backdrop.flat:checked,
+    button:backdrop:active,
+    button:backdrop:checked {
+      color: @color15;
+      border-color: @color2;
+      background-image: image(#c4080a);
+      box-shadow: none; }
+    notebook > header > tabs > arrow:backdrop:disabled,
+    button:backdrop.flat:disabled,
+    button:backdrop:disabled {
+      color: @color7;
+      border-color: @color0;
+      background-image: image(@color0);
+      box-shadow: none; }
+      notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > tabs > arrow:backdrop:disabled:checked,
+      button:backdrop.flat:disabled:active,
+      button:backdrop.flat:disabled:checked,
+      button:backdrop:disabled:active,
+      button:backdrop:disabled:checked {
+        color: @color7;
+        border-color: @color0;
+        background-image: image(#1a1d23);
+        box-shadow: none; }
+  button.titlebutton:backdrop, button.sidebar-button:backdrop, notebook > header > tabs > arrow:backdrop, button.titlebutton:disabled, button.sidebar-button:disabled, notebook > header > tabs > arrow:disabled,
+  button.flat:backdrop,
+  button.flat:disabled,
+  button.flat:backdrop:disabled {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+  notebook > header > tabs > arrow:disabled,
+  button:disabled {
+    color: @color7;
+    border-color: @color0;
+    background-image: image(@color0);
+    box-shadow: none; }
+    notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked,
+    button:disabled:active,
+    button:disabled:checked {
+      color: @color7;
+      border-color: @color0;
+      background-image: image(#16181d);
+      box-shadow: none; }
+  notebook > header > tabs > arrow.image-button,
+  button.image-button {
+    min-width: 24px;
+    padding-left: 2px;
+    padding-right: 2px; }
+  notebook > header > tabs > arrow.text-button,
+  button.text-button {
+    padding-left: 16px;
+    padding-right: 16px; }
+  notebook > header > tabs > arrow.text-button.image-button,
+  button.text-button.image-button {
+    padding-left: 8px;
+    padding-right: 8px; }
+    notebook > header > tabs > arrow.text-button.image-button label,
+    button.text-button.image-button label {
+      padding-left: 8px;
+      padding-right: 8px; }
+  combobox:drop(active) button.combo, notebook > header > tabs > arrow:drop(active),
+  button:drop(active) {
+    color: #19a187;
+    border-color: #19a187;
+    box-shadow: inset 0 0 0 1px #19a187; }
+
+row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled), row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
+  color: @color15;
+  border-color: transparent; }
+  row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled):backdrop, row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):backdrop {
+    color: @color7; }
+
+button.color {
+    padding: 4px; }
+    button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
+        border-radius: 0; }
+
+button.osd {
+  min-width: 26px;
+  min-height: 32px;
+  color: @color15;
+  border-radius: 5px;
+  color: @color15;
+  border-color: black;
+  background-color: transparent;
+  background-image: image(#303340);
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  -gtk-icon-shadow: 0 1px black;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  box-shadow: none; }
+
+  button.osd.image-button {
+    min-width: 34px; }
+
+  button.osd:hover {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(#4a5063);
+    background-clip: padding-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    box-shadow: none; }
+
+  button.osd:active,
+  button.osd:checked {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(black);
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    box-shadow: none; }
+
+  button.osd:disabled:backdrop,
+  button.osd:disabled {
+    color: #97999f;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(rgba(68, 72, 83, 0.5));
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    border: none; }
+
+  button.osd:backdrop {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(#303340);
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    border: none; }
+
+.app-notification button,
+.app-notification.frame button, .csd popover.background.touch-selection button, .csd popover.background.magnifier button, popover.background.touch-selection button, popover.background.magnifier button, .osd button {
+  color: @color15;
+  border-color: black;
+  background-color: transparent;
+  background-image: image(#303340);
+  background-clip: padding-box;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px black;
+  -gtk-icon-shadow: 0 1px black;
+  outline-color: rgba(255, 255, 255, 0.3); }
+  .app-notification button:hover, popover.background.touch-selection button:hover, popover.background.magnifier button:hover, .osd button:hover {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(#4a5063);
+    background-clip: padding-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+    outline-color: rgba(255, 255, 255, 0.3); }
+  .app-notification button:active, popover.background.touch-selection button:active, popover.background.magnifier button:active, .app-notification button:checked, popover.background.touch-selection button:checked, popover.background.magnifier button:checked, .osd button:active:backdrop, .osd button:active, .osd button:checked:backdrop, .osd button:checked {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(black);
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    outline-color: rgba(255, 255, 255, 0.3); }
+  .app-notification button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd button:disabled:backdrop, .osd button:disabled {
+    color: #97999f;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(rgba(68, 72, 83, 0.5));
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+  .app-notification button:backdrop, popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop, .osd button:backdrop {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(#303340);
+    background-clip: padding-box;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+  .app-notification button.flat, popover.background.touch-selection button.flat, popover.background.magnifier button.flat, .osd button.flat {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    box-shadow: none;
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black; }
+    .app-notification button.flat:hover, popover.background.touch-selection button.flat:hover, popover.background.magnifier button.flat:hover, .osd button.flat:hover {
+      color: @color15;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(#4a5063);
+      background-clip: padding-box;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+      text-shadow: 0 1px black;
+      -gtk-icon-shadow: 0 1px black;
+      outline-color: rgba(255, 255, 255, 0.3); }
+    .app-notification button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled, .osd button.flat:disabled {
+      color: #97999f;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(rgba(68, 72, 83, 0.5));
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      background-image: none;
+      border-color: transparent;
+      box-shadow: none; }
+    .app-notification button.flat:backdrop, popover.background.touch-selection button.flat:backdrop, popover.background.magnifier button.flat:backdrop, .osd button.flat:backdrop {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
+    .app-notification button.flat:active, popover.background.touch-selection button.flat:active, popover.background.magnifier button.flat:active, .app-notification button.flat:checked, popover.background.touch-selection button.flat:checked, popover.background.magnifier button.flat:checked, .osd button.flat:active, .osd button.flat:checked {
+      color: @color15;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(black);
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      outline-color: rgba(255, 255, 255, 0.3); }

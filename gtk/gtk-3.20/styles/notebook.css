@@ -1,0 +1,264 @@
+notebook > header {
+  border: 0;
+  padding: 0;
+  background-color: #1d2027; }
+  notebook > header.top > tabs, notebook > header.bottom > tabs, notebook > header.left > tabs, notebook > header.right > tabs {
+    margin: 0; }
+      notebook > header.top > tabs > tab:hover:not(:backdrop),
+      notebook > header.top > tabs > tab.reorderable-page:hover:not(:backdrop), notebook > header.bottom > tabs > tab:hover:not(:backdrop),
+      notebook > header.bottom > tabs > tab.reorderable-page:hover:not(:backdrop), notebook > header.left > tabs > tab:hover:not(:backdrop),
+      notebook > header.left > tabs > tab.reorderable-page:hover:not(:backdrop), notebook > header.right > tabs > tab:hover:not(:backdrop),
+      notebook > header.right > tabs > tab.reorderable-page:hover:not(:backdrop) {
+        color: @color15;
+        outline-color: rgba(238, 238, 236, 0.3);
+        border-color: @color0;
+        background-image: image(#414657);
+        box-shadow: none; }
+      notebook > header.top > tabs > tab:checked,
+      notebook > header.top > tabs > tab.reorderable-page:checked, notebook > header.bottom > tabs > tab:checked,
+      notebook > header.bottom > tabs > tab.reorderable-page:checked, notebook > header.left > tabs > tab:checked,
+      notebook > header.left > tabs > tab.reorderable-page:checked, notebook > header.right > tabs > tab:checked,
+      notebook > header.right > tabs > tab.reorderable-page:checked {
+        color: @color15;
+        outline-color: rgba(238, 238, 236, 0.3);
+        border-color: @color0;
+        background-image: image(#323643);
+        box-shadow: none;
+        background: image(@color0); }
+        notebook > header.top > tabs > tab:checked:backdrop,
+        notebook > header.top > tabs > tab.reorderable-page:checked:backdrop, notebook > header.bottom > tabs > tab:checked:backdrop,
+        notebook > header.bottom > tabs > tab.reorderable-page:checked:backdrop, notebook > header.left > tabs > tab:checked:backdrop,
+        notebook > header.left > tabs > tab.reorderable-page:checked:backdrop, notebook > header.right > tabs > tab:checked:backdrop,
+        notebook > header.right > tabs > tab.reorderable-page:checked:backdrop {
+          color: @color7;
+          border-color: @color0;
+          background-image: image(#323643);
+          box-shadow: none;
+          background: image(@color0); }
+  notebook > header.top {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.top > tabs {
+      margin-bottom: -3px; }
+      notebook > header.top > tabs > tab {
+        margin: 3px 0;
+        border-radius: 6px 6px 0 0; }
+        notebook > header.top > tabs > tab:not(:checked) {
+          box-shadow: 4px 3px 0 -3px @color0; }
+        notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:backdrop {
+          border-bottom-color: @color0; }
+  notebook > header.bottom {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.bottom > tabs {
+      margin-top: -3px; }
+      notebook > header.bottom > tabs > tab {
+        margin: 3px 0;
+        border-radius: 0 0 6px 6px; }
+        notebook > header.bottom > tabs > tab:not(:checked) {
+          box-shadow: 4px -3px 0 -3px @color0; }
+        notebook > header.bottom > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked:backdrop {
+          border-top-color: @color1; }
+  notebook > header.right {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.right > tabs {
+      margin-left: -3px; }
+      notebook > header.right > tabs > tab {
+        margin: 0 3px;
+        border-radius: 0 6px 6px 0; }
+        notebook > header.right > tabs > tab:not(:checked) {
+          box-shadow: -3px 4px 0 -3px @color0; }
+        notebook > header.right > tabs > tab:checked, notebook > header.right > tabs > tab:checked:backdrop {
+          border-left-color: @color1; }
+  notebook > header.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 2px), rgba(0, 0, 0, 0.05) calc(100% - 1px), rgba(0, 0, 0, 0.15)); }
+    notebook > header.left > tabs {
+      margin-right: -3px; }
+      notebook > header.left > tabs > tab {
+        margin: 0 3px;
+        border-radius: 6px 0 0 6px; }
+        notebook > header.left > tabs > tab:not(:checked) {
+          box-shadow: 3px 4px 0 -3px @color0; }
+        notebook > header.left > tabs > tab:checked, notebook > header.left > tabs > tab:checked:backdrop {
+          border-right-color: @color1; }
+  notebook > header tab {
+    border-radius: 6px;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    min-height: 24px; }
+    notebook > header tab button.flat {
+      margin-top: 1px;
+      margin-bottom: 1px; }
+notebook > header {
+  padding: 1px;
+  border-color: @color0;
+  border-width: 1px;
+  background-color: #1d2027; }
+  notebook > header:backdrop {
+    border-color: @color0;
+    background-color: #1d2027; }
+  notebook > header tabs {
+    margin: -1px; }
+  notebook > header.top {
+    border-bottom-style: solid; }
+    notebook > header.top > tabs {
+      margin-bottom: -2px; }
+      notebook > header.top > tabs > tab:hover {
+        box-shadow: inset 0 -4px @color0; }
+      notebook > header.top > tabs > tab:backdrop {
+        box-shadow: none; }
+      notebook > header.top > tabs > tab:checked {
+        box-shadow: inset 0 -4px @color2; }
+  notebook > header.bottom {
+    border-top-style: solid; }
+    notebook > header.bottom > tabs {
+      margin-top: -2px; }
+      notebook > header.bottom > tabs > tab:hover {
+        box-shadow: inset 0 4px @color0; }
+      notebook > header.bottom > tabs > tab:backdrop {
+        box-shadow: none; }
+      notebook > header.bottom > tabs > tab:checked {
+        box-shadow: inset 0 4px @color2; }
+  notebook > header.left {
+    border-right-style: solid; }
+    notebook > header.left > tabs {
+      margin-right: -2px; }
+      notebook > header.left > tabs > tab:hover {
+        box-shadow: inset -4px 0 @color0; }
+      notebook > header.left > tabs > tab:backdrop {
+        box-shadow: none; }
+      notebook > header.left > tabs > tab:checked {
+        box-shadow: inset -4px 0 @color2; }
+  notebook > header.right {
+    border-left-style: solid; }
+    notebook > header.right > tabs {
+      margin-left: -2px; }
+      notebook > header.right > tabs > tab:hover {
+        box-shadow: inset 4px 0 @color0; }
+      notebook > header.right > tabs > tab:backdrop {
+        box-shadow: none; }
+      notebook > header.right > tabs > tab:checked {
+        box-shadow: inset 4px 0 @color2; }
+  notebook > header.top > tabs > arrow {
+    border-top-style: none; }
+  notebook > header.bottom > tabs > arrow {
+    border-bottom-style: none; }
+  notebook > header.top > tabs > arrow, notebook > header.bottom > tabs > arrow {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-left: 4px;
+    padding-right: 4px; }
+    notebook > header.top > tabs > arrow.down, notebook > header.bottom > tabs > arrow.down {
+      -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
+    notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
+      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+  notebook > header.left > tabs > arrow {
+    border-left-style: none; }
+  notebook > header.right > tabs > arrow {
+    border-right-style: none; }
+  notebook > header.left > tabs > arrow, notebook > header.right > tabs > arrow {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    notebook > header.left > tabs > arrow.down, notebook > header.right > tabs > arrow.down {
+      -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+    notebook > header.left > tabs > arrow.up, notebook > header.right > tabs > arrow.up {
+      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+  notebook > header > tabs > arrow {
+    min-height: 16px;
+    min-width: 16px;
+    border-radius: 0; }
+    notebook > header > tabs > arrow:hover:not(:active):not(:backdrop) {
+      background-clip: padding-box;
+      background-image: none;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: transparent;
+      box-shadow: none; }
+    notebook > header > tabs > arrow:disabled {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
+  notebook > header tab {
+    min-height: 30px;
+    min-width: 30px;
+    padding: 3px 12px;
+    outline-offset: -5px;
+    color: @color15;
+    font-weight: normal;
+    border-width: 1px;
+    border-color: transparent; }
+    notebook > header tab:hover {
+      color: @color15;
+      background-color: #1a1c23; }
+      notebook > header tab:hover.reorderable-page {
+        border-color: rgba(19, 21, 26, 0.3);
+        background-color: rgba(35, 37, 46, 0.2); }
+    notebook > header tab:backdrop {
+      color: #5f6267; }
+      notebook > header tab:backdrop.reorderable-page {
+        border-color: transparent;
+        background-color: transparent; }
+    notebook > header tab:checked {
+      color: @color15; }
+      notebook > header tab:checked.reorderable-page {
+        border-color: rgba(19, 21, 26, 0.5);
+        background-color: rgba(35, 37, 46, 0.5); }
+        notebook > header tab:checked.reorderable-page:hover {
+          background-color: rgba(35, 37, 46, 0.7); }
+    notebook > header tab:backdrop:checked {
+      color: @color7; }
+      notebook > header tab:backdrop:checked.reorderable-page {
+        border-color: @color0;
+        background-color: @color0; }
+    notebook > header tab button.flat {
+      padding: 0;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      min-width: 20px;
+      min-height: 20px; }
+      notebook > header tab button.flat:hover {
+        color: currentColor; }
+      notebook > header tab button.flat, notebook > header tab button.flat:backdrop {
+        color: alpha(currentColor,0.3); }
+      notebook > header tab button.flat:last-child {
+        margin-left: 4px;
+        margin-right: -4px; }
+      notebook > header tab button.flat:first-child {
+        margin-left: -4px;
+        margin-right: 4px; }
+  notebook > header.top tabs, notebook > header.bottom tabs {
+    padding-left: 4px;
+    padding-right: 4px; }
+    notebook > header.top tabs:not(:only-child), notebook > header.bottom tabs:not(:only-child) {
+      margin-left: 3px;
+      margin-right: 3px; }
+      notebook > header.top tabs:not(:only-child):first-child, notebook > header.bottom tabs:not(:only-child):first-child {
+        margin-left: -1px; }
+      notebook > header.top tabs:not(:only-child):last-child, notebook > header.bottom tabs:not(:only-child):last-child {
+        margin-right: -1px; }
+    notebook > header.top tabs tab, notebook > header.bottom tabs tab {
+      margin-left: 4px;
+      margin-right: 4px; }
+  notebook > header.left tabs, notebook > header.right tabs {
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    notebook > header.left tabs:not(:only-child), notebook > header.right tabs:not(:only-child) {
+      margin-top: 3px;
+      margin-bottom: 3px; }
+      notebook > header.left tabs:not(:only-child):first-child, notebook > header.right tabs:not(:only-child):first-child {
+        margin-top: -1px; }
+      notebook > header.left tabs:not(:only-child):last-child, notebook > header.right tabs:not(:only-child):last-child {
+        margin-bottom: -1px; }
+    notebook > header.left tabs tab, notebook > header.right tabs tab {
+      margin-top: 4px;
+      margin-bottom: 4px; }
+  notebook > header.top tab {
+    padding-bottom: 4px; }
+  notebook > header.bottom tab {
+    padding-top: 4px; }
+
+notebook > stack:not(:only-child) {
+  background-color: @color0; }
+  notebook > stack:not(:only-child):backdrop {
+    background-color: @color8; }

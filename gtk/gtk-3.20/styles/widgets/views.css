@@ -1,0 +1,171 @@
+.view, iconview,
+.view text,
+iconview text,
+textview text {
+  color: @color15;
+  background-color: @color0; }
+  .view:backdrop, iconview:backdrop,
+  .view text:backdrop,
+  iconview text:backdrop,
+  textview text:backdrop {
+    color: #d4d5d7;
+    background-color: @color8; }
+    .view:backdrop:disabled, iconview:backdrop:disabled,
+    .view text:backdrop:disabled,
+    iconview text:backdrop:disabled,
+    textview text:backdrop:disabled {
+      color: @color7; }
+  .view:disabled, iconview:disabled,
+  .view text:disabled,
+  iconview text:disabled,
+  textview text:disabled {
+    color: @color7;
+    background-color: @color0; }
+  .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
+  .view text:selected:focus,
+  iconview text:selected:focus,
+  textview text:selected:focus,
+  .view text:selected,
+  iconview text:selected,
+  textview text:selected {
+    border-radius: 3px; }
+
+textview border {
+  background-color: #252831; }
+
+.rubberband,
+rubberband,
+.content-view rubberband,
+.content-view .rubberband,
+treeview.view rubberband,
+flowbox rubberband {
+  border: 1px solid @color2;
+  background-color: rgba(185, 1, 1, 0.2); }
+
+flowbox flowboxchild {
+  padding: 3px; }
+
+treeview.view {
+  border-left-color: #8b8c90;
+  border-top-color: @color0; }
+  * {
+    -GtkTreeView-horizontal-separator: 4;
+    -GtkTreeView-grid-line-width: 1;
+    -GtkTreeView-grid-line-pattern: '';
+    -GtkTreeView-tree-line-width: 1;
+    -GtkTreeView-tree-line-pattern: '';
+    -GtkTreeView-expander-size: 16; }
+  treeview.view:selected:focus, treeview.view:selected {
+    border-radius: 0; }
+  treeview.view:selected:backdrop, treeview.view:selected {
+    border-left-color: #f68080;
+    border-top-color: rgba(238, 238, 236, 0.1); }
+  treeview.view:disabled {
+    color: @color7; }
+    treeview.view:disabled:selected {
+      color: #f46767; }
+      treeview.view:disabled:selected:backdrop {
+        color: #e54141; }
+    treeview.view:disabled:backdrop {
+      color: @color7; }
+  treeview.view.separator {
+    min-height: 2px;
+    color: @color0; }
+    treeview.view.separator:backdrop {
+      color: rgba(35, 37, 46, 0.1); }
+  treeview.view:backdrop {
+    border-left-color: #55585e;
+    border-top: @color0; }
+  treeview.view:drop(active) {
+    border-style: solid none;
+    border-width: 1px;
+    border-color: #540000; }
+    treeview.view:drop(active).after {
+      border-top-style: none; }
+    treeview.view:drop(active).before {
+      border-bottom-style: none; }
+  treeview.view.expander {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+    color: #bebfc2; }
+    treeview.view.expander:dir(rtl) {
+      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
+    treeview.view.expander:hover {
+      color: @color15; }
+    treeview.view.expander:selected {
+      color: #f9b3b3; }
+      treeview.view.expander:selected:hover {
+        color: @color15; }
+      treeview.view.expander:selected:backdrop {
+        color: #db9597; }
+    treeview.view.expander:checked {
+      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+    treeview.view.expander:backdrop {
+      color: #6c6e73; }
+  treeview.view.progressbar {
+    background-color: @color2;
+    background-image: image(@color2);
+    box-shadow: none; }
+    treeview.view.progressbar:selected:focus, treeview.view.progressbar:selected {
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+      background-image: image(@color1); }
+      treeview.view.progressbar:selected:focus:backdrop, treeview.view.progressbar:selected:backdrop {
+        background-color: @color8; }
+    treeview.view.progressbar:backdrop {
+      border-color: @color8;
+      background-image: none;
+      box-shadow: none; }
+  treeview.view.trough {
+    background-color: rgba(238, 238, 236, 0.1); }
+    treeview.view.trough:selected:focus, treeview.view.trough:selected {
+      background-color: @color2; }
+  treeview.view header button {
+    color: #8b8c90;
+    background-color: @color0;
+    font-weight: bold;
+    text-shadow: none;
+    box-shadow: none; }
+    treeview.view header button:hover {
+      color: #bdbdbe;
+      box-shadow: none;
+      transition: none; }
+    treeview.view header button:active {
+      color: @color15;
+      transition: none; }
+  treeview.view button.dnd:active, treeview.view button.dnd:selected, treeview.view button.dnd:hover, treeview.view button.dnd,
+  treeview.view header.button.dnd:active,
+  treeview.view header.button.dnd:selected,
+  treeview.view header.button.dnd:hover,
+  treeview.view header.button.dnd {
+    padding: 0 6px;
+    color: @color1;
+    background-image: none;
+    background-color: @color2;
+    border-style: none;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 1px @color1;
+    text-shadow: none;
+    transition: none; }
+  treeview.view acceleditor > label {
+    background-color: @color2; }
+
+treeview.view header button, treeview.view header button:hover, treeview.view header button:active {
+  padding: 0 6px;
+  background-image: none;
+  border-style: none solid solid none;
+  border-color: #4f5159;
+  border-radius: 0;
+  text-shadow: none; }
+  treeview.view header button:disabled {
+    border-color: @color0;
+    background-image: none; }
+  treeview.view header button:backdrop {
+    color: #55585e;
+    border-color: @color0;
+    border-style: none solid solid none;
+    background-image: none;
+    background-color: @color8; }
+    treeview.view header button:backdrop:disabled {
+      border-color: @color0;
+      background-image: none; }
+  treeview.view header button:last-child {
+    border-right-style: none; }

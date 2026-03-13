@@ -1,0 +1,24 @@
+label {
+  caret-color: currentColor; }
+  label selection {
+    background-color: @color2;
+    color: @color15; }
+  label:disabled {
+    color: @color7; }
+    button label:disabled {
+      color: inherit; }
+    label:disabled:backdrop {
+      color: @color7; }
+      button label:disabled:backdrop {
+        color: inherit; }
+  label.error {
+    color: @color1; }
+    label.error:disabled {
+      color: rgba(191, 23, 23, 0.5); }
+    label.error:disabled:backdrop {
+      color: rgba(191, 23, 23, 0.4); }
+
+.dim-label, .budgie-notification .notification-body, .budgie-switcher .notification-body, .budgie-switcher-window .notification-body, .budgie-osd .notification-body, .titlebar:not(headerbar) .subtitle,
+headerbar .subtitle, label.separator {
+  opacity: 0.55;
+  text-shadow: none; }

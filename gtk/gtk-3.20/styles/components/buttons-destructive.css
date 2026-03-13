@@ -1,0 +1,134 @@
+button.destructive-action {
+  color: @color15;
+  outline-color: rgba(255, 255, 255, 0.3);
+  border-color: #991212;
+  background-image: image(@color9);
+  box-shadow: none; }
+
+  button.destructive-action.flat {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    color: @color9; }
+
+  button.destructive-action:hover {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: #790e0e;
+    background-image: image(#e41d1d);
+    box-shadow: none; }
+
+  button.destructive-action:active,
+  button.destructive-action:checked {
+    color: @color15;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: #670c0c;
+    background-image: linear-gradient(to right, #700d0d, #5d0b0b);
+    box-shadow: 0 2px 4px rgba(103, 12, 12, 0.25); }
+
+  button.destructive-action:backdrop,
+  button.destructive-action.flat:backdrop {
+    color: #edd0d0;
+    border-color: #790e0e;
+    background-image: image(@color9);
+    box-shadow: none; }
+
+    button.destructive-action:backdrop:active,
+    button.destructive-action:backdrop:checked,
+    button.destructive-action.flat:backdrop:active,
+    button.destructive-action.flat:backdrop:checked {
+      color: @color15;
+      border-color: @color2;
+      background-image: image(#c4080a);
+      box-shadow: none; }
+
+    button.destructive-action:backdrop:disabled,
+    button.destructive-action.flat:backdrop:disabled {
+      color: @color7;
+      border-color: @color0;
+      background-image: image(@color0);
+      box-shadow: none; }
+
+      button.destructive-action:backdrop:disabled:active,
+      button.destructive-action:backdrop:disabled:checked,
+      button.destructive-action.flat:backdrop:disabled:active,
+      button.destructive-action.flat:backdrop:disabled:checked {
+        color: #ad6667;
+        border-color: #790e0e;
+        background-image: image(#811415);
+        box-shadow: none; }
+
+  button.destructive-action.flat:backdrop,
+  button.destructive-action.flat:disabled,
+  button.destructive-action.flat:backdrop:disabled {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    color: rgba(166, 20, 20, 0.8); }
+
+  button.destructive-action:disabled {
+    color: @color7;
+    border-color: @color0;
+    background-image: image(@color0);
+    box-shadow: none; }
+
+    button.destructive-action:disabled:active,
+    button.destructive-action:disabled:checked {
+      color: #c9a1a1;
+      border-color: #790e0e;
+      background-image: image(#791314);
+      box-shadow: none; }
+  .osd button.destructive-action {
+    color: @color15;
+    border-color: black;
+    background-color: transparent;
+    background-image: image(rgba(166, 20, 20, 0.5));
+    background-clip: padding-box;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+    outline-color: rgba(255, 255, 255, 0.3); }
+    .osd button.destructive-action:hover {
+      color: @color15;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(rgba(166, 20, 20, 0.7));
+      background-clip: padding-box;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+      text-shadow: 0 1px black;
+      -gtk-icon-shadow: 0 1px black;
+      outline-color: rgba(255, 255, 255, 0.3); }
+    .osd button.destructive-action:active:backdrop, .osd button.destructive-action:active, .osd button.destructive-action:checked:backdrop, .osd button.destructive-action:checked {
+      color: @color15;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(@color9);
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      outline-color: rgba(255, 255, 255, 0.3); }
+    .osd button.destructive-action:disabled:backdrop, .osd button.destructive-action:disabled {
+      color: #97999f;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(rgba(68, 72, 83, 0.5));
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
+	.osd button.destructive-action:backdrop {
+      color: white;
+      border-color: black;
+      background-color: transparent;
+      background-image: image(rgba(166, 20, 20, 0.5));
+      background-clip: padding-box;
+      box-shadow: none;
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
