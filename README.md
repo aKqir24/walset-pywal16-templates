@@ -1,4 +1,4 @@
-# walset-pywal16-templates
+# walset-theme-templates(old)
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/aKqir24/walset-pywal16-templates?style=for-the-badge&logoColor=violet&logoSize=100&labelColor=%23242424&color=%239e8a24)
 
@@ -18,3 +18,7 @@ walset-pywal16-templates/
     └── templates
         └── places (all the folder icons)
 ```
+
+## Why it is archived?
+
+I planning to move in using `matugen` and apply my knowledge in material design, by changing the templates to use `matugen-themes`. Though I love `pywal16` very much, however I can't get my mind out of how unique is matugen in terms of color options. 
